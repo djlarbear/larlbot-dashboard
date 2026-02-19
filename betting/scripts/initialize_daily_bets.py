@@ -62,7 +62,7 @@ def initialize_active_bets():
         'note': 'Only top 10 curated picks are placed for wagering (Feb 15 80% proven strategy)'
     }
     
-    with open('active_bets.json', 'w') as f:
+    with open('/Users/macmini/.openclaw/workspace/betting/data/active_bets.json', 'w') as f:
         json.dump(active_bets_data, f, indent=2)
     
     print(f"   ✅ Saved TOP 10 bets to active_bets.json (wagering only)")
@@ -71,10 +71,10 @@ def initialize_active_bets():
     # Now run bet_ranker to create Top 10 ranking
     print("\n📊 Ranking bets by LarlScore...")
     import subprocess
-    result = subprocess.run(['python3', 'bet_ranker.py'], capture_output=True, text=True)
+    result = subprocess.run(['python3', '/Users/macmini/.openclaw/workspace/betting/scripts/bet_ranker.py'], capture_output=True, text=True)
     
     # Check ranked_bets.json
-    with open('ranked_bets.json', 'r') as f:
+    with open('/Users/macmini/.openclaw/workspace/betting/data/ranked_bets.json', 'r') as f:
         ranked = json.load(f)
     
     top_10_count = len(ranked.get('top_10', []))

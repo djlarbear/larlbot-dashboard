@@ -260,7 +260,7 @@ def save_ranked_bets(ranked_bets, performance, win_rates):
         output['rest'].append(bet_data)
     
     # Save to file
-    with open(WORKSPACE / 'ranked_bets.json', 'w') as f:
+    with open(WORKSPACE / 'betting/data/ranked_bets.json', 'w') as f:
         json.dump(output, f, indent=2)
     
     return output
