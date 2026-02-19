@@ -1,3 +1,63 @@
+# MEMORY.md - Betting System (Feb 19, 2026 - Full Session Recap)
+
+## SESSION SUMMARY (Feb 19, 8:00 AM - 5:00 PM EST)
+
+**Critical Issues Identified & Fixed:**
+1. ✅ Pick discrepancy (parlay at 10:31 AM, system changed at 14:03 PM)
+2. ✅ Dashboard design overhaul broke system (reverted to 10:00 AM state)
+3. ✅ Railway Dockerfile path errors (fixed COPY locations)
+4. ✅ Railway Streamlit detection error (recurring - finally fixed with config files)
+
+**Key Learnings:**
+- Don't redesign UI when core system is working
+- Config files (Procfile, railway.json, railway.toml, .dockerignore) must be in git
+- Recurring errors need permanent fixes in config, not just local patches
+- Once fixed, document the fix so it doesn't regress
+
+## 🔄 FINAL RAILWAY DEPLOYMENT (Feb 19, 4:59 PM) - SUCCESSFUL ✅
+
+**Root Cause of Streamlit Error:**
+Railway was detecting buildpacks from local betting_env (which had Streamlit) before even building the Docker image. Even with Dockerfile, it would try to run Streamlit detection first.
+
+**Complete Solution (Commit 4277d14):**
+1. ✅ **Dockerfile** - Explicit Flask setup, ENTRYPOINT runs entrypoint.sh
+2. ✅ **railway.toml** - Explicit config: `builder = "dockerfile"` 
+3. ✅ **railway.json** - Minimal config pointing to Dockerfile
+4. ✅ **.dockerignore** - Excludes betting_env (which has Streamlit)
+5. ✅ **entrypoint.sh** - Verifies Flask ✅, rejects Streamlit ❌
+6. ❌ **No Procfile** - Removed (causes ambiguity with Docker)
+
+**Key Files:**
+```
+railway.toml:
+  [build]
+  builder = "dockerfile"
+  dockerfile = "Dockerfile"
+
+railway.json:
+  {
+    "build": {
+      "builder": "dockerfile",
+      "dockerfile": "Dockerfile"
+    }
+  }
+
+.dockerignore:
+  - betting_env/ (prevents Docker from seeing local Streamlit)
+  - __pycache__/
+  - .git/
+  - archive/
+  - docs/
+```
+
+**Commits (Feb 19):**
+- a18db09: Fixed Dockerfile paths (betting/scripts/ and betting/data/)
+- 7488562: Added railway.json + .dockerignore
+- 66d79c0: Documented Streamlit fix root cause
+- 2af06ce: Removed Procfile (source of ambiguity)
+- 38508e2: Updated MEMORY with complete fix architecture
+- 4277d14: Added railway.toml (explicit builder config) - **FINAL SUCCESS**
+
 # MEMORY.md - Betting System (Current State)
 
 ## 🔄 FULL SYSTEM RESTORE TO WORKING STATE (Feb 19, 4:47 PM)
@@ -132,12 +192,47 @@ Once you fix a recurring error, you need to DOCUMENT the fix in config files (no
 **Data Integrity:** Verified
 **Git:** Clean state at working commit
 
-**Next Steps:**
-1. ⏳ Wait for Railway auto-deploy from GitHub
-2. ✅ System should be back to reliable state
-3. ✅ Continue with cron automation as planned
-4. ✅ Implement pick change guard system (when ready)
+## CURRENT SYSTEM STATE (Feb 19, 5:00 PM)
+
+**Betting Dashboard:**
+- ✅ Local: Running on http://localhost:5001
+- ✅ Railway: Deployed and working
+- ✅ Server: dashboard_server_cache_fixed.py
+- ✅ APIs: All responding (/api/stats, /api/ranked-bets, /api/status)
+
+**Betting Model:**
+- ✅ Record: 5-5 (50% win rate on historical top 10)
+- ✅ Active picks: 10 total
+- ✅ Top pick: High Point Panthers -14.5 (71% confidence)
+- ✅ Your parlay: All 10 picks verified and intact
+
+**Cron Automation:**
+- ✅ 2:00 AM - Daily Memory Review (Telegram)
+- ✅ 5:00 AM - Daily Betting Workflow (scores → learning → picks)
+- ✅ Every 6h - Error Monitor (system health)
+
+**Git & Deployment:**
+- ✅ Commit 4277d14 (4:59 PM) - Railway fix with railway.toml
+- ✅ All config files in place (Dockerfile, railway.toml, .dockerignore)
+- ✅ Pushed to origin/main
+- ✅ Railway auto-deployed successfully
+
+**Pick Change Guard System:**
+- ⏳ Not yet activated (but fully built)
+- Can be deployed when needed
+- Requires Telegram setup: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
 ---
 
-**Session Complete: 4:47 PM EST - Feb 19, 2026**
+## NEXT SESSION ACTIONS
+
+1. Monitor Railway for stability (watch for regressions)
+2. Review betting model performance
+3. If needed, activate pick change guard system
+4. No UI/design changes - focus on model quality
+5. Trust the automation to refine picks daily
+
+---
+
+**Session Complete: 5:00 PM EST - Feb 19, 2026**
+**Status: ✅ STABLE, DEPLOYED, READY FOR PRODUCTION**
