@@ -45,10 +45,10 @@ echo ""
 echo "📈 PERFORMANCE (from adaptive_weights.json):"
 WEIGHTS_FILE=~/.openclaw/workspace/betting/data/adaptive_weights.json
 if [ -f "$WEIGHTS_FILE" ]; then
-    TOTAL_WR=$(jq -r '.TOTAL.winRate // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
-    SPREAD_WR=$(jq -r '.SPREAD.winRate // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
-    TOTAL_WT=$(jq -r '.TOTAL.weight // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
-    SPREAD_WT=$(jq -r '.SPREAD.weight // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
+    TOTAL_WR=$(jq -r '.weights.TOTAL.win_rate // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
+    SPREAD_WR=$(jq -r '.weights.SPREAD.win_rate // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
+    TOTAL_WT=$(jq -r '.weights.TOTAL.weight // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
+    SPREAD_WT=$(jq -r '.weights.SPREAD.weight // "N/A"' "$WEIGHTS_FILE" 2>/dev/null)
     echo "  🎯 TOTAL: ${TOTAL_WR}% (weight: $TOTAL_WT)"
     echo "  📏 SPREAD: ${SPREAD_WR}% (weight: $SPREAD_WT)"
 else
