@@ -15,9 +15,9 @@ from datetime import datetime
 
 SCRIPTS = [
     ("Fetch Scores", "/Users/macmini/.openclaw/agents/backend-dev/ncaa_hybrid_score_fetcher.py"),
-    ("Learning Engine", "/Users/macmini/.openclaw/workspace/learning_engine.py"),
-    ("Update Weights", "/Users/macmini/.openclaw/workspace/update_adaptive_weights.py"),
-    ("Generate Picks", "/Users/macmini/.openclaw/workspace/initialize_daily_bets.py"),
+    ("Learning Engine", "/Users/macmini/.openclaw/workspace/betting/scripts/learning_engine.py"),
+    ("Update Weights", "/Users/macmini/.openclaw/workspace/betting/scripts/update_adaptive_weights.py"),
+    ("Generate Picks", "/Users/macmini/.openclaw/workspace/betting/scripts/initialize_daily_bets.py"),
 ]
 
 def run_workflow():
