@@ -46,6 +46,50 @@ Reverted entire system to commit **84d9291 (10:00 AM)** - the last fully working
 
 ---
 
+## 🔴 MULTIPLE RAILWAY ISSUES - FULLY RESOLVED (Feb 19, 4:55 PM)
+
+**Issue Chain:**
+1. Streamlit error "executable `streamlit` could not be found"
+2. Root cause: Local betting_env had Streamlit, Railway was detecting it
+3. Initial fix: Procfile + railway.json + .dockerignore
+4. **FINAL FIX:** Removed Procfile entirely
+
+**Final Solution:**
+When using Docker, Procfile creates ambiguity. Railway tried to interpret Procfile, which triggered Streamlit detection.
+
+**What's in git now (Commit 2af06ce):**
+- ✅ Dockerfile - explicit Flask setup with ENTRYPOINT
+- ✅ railway.json - tells Railway to use Dockerfile (no buildpacks)
+- ✅ .dockerignore - excludes betting_env from Docker build
+- ❌ No Procfile (removed - causes ambiguity with Docker)
+- ✅ entrypoint.sh - verifies Flask setup and runs app
+
+**Architecture:**
+```
+GitHub push → Railway detects Dockerfile → Docker build
+  ↓
+Docker builds from Dockerfile (requirements.txt, no betting_env)
+  ↓
+Docker starts container with ENTRYPOINT: /app/entrypoint.sh
+  ↓
+entrypoint.sh: Verify Flask, run dashboard_server_cache_fixed.py
+  ↓
+Flask app listening on port 5001
+```
+
+**Why This Works:**
+- railway.json with `builder: dockerfile` = NO ambiguity
+- No Procfile = NO alternate startup path
+- .dockerignore excludes betting_env = Streamlit NOT in image
+- Dockerfile verifies Flask is installed, Streamlit is NOT
+- entrypoint.sh is the ONLY entry point
+
+**Commits:**
+- a18db09: Fixed Dockerfile paths
+- 7488562: Added railway.json + .dockerignore
+- 66d79c0: Documented root cause
+- 2af06ce: Removed Procfile (final fix)
+
 ## 🔴 LEARNING ISSUE IDENTIFIED & FIXED (Feb 19, 4:52 PM)
 
 **Problem:** Recurring Streamlit error on Railway - same issue fixed before, came back
