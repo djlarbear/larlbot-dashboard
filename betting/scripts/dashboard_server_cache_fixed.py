@@ -31,7 +31,9 @@ try:
 except ImportError:
     CACHE_AVAILABLE = False
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__, 
+            template_folder=os.path.join(WORKSPACE, 'templates'),
+            static_folder=os.path.join(WORKSPACE, 'static'))
 
 # ============================================================================
 # GLOBAL STATE - Used for cache-busting

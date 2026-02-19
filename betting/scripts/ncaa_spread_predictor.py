@@ -8,8 +8,8 @@ import json
 import os
 from statistics import mean
 
-CACHE_PATH = 'team_stats_cache.json'
-NBA_CACHE_PATH = 'nba_team_stats_cache.json'
+CACHE_PATH = '../data/team_stats_cache.json'
+NBA_CACHE_PATH = '../data/nba_team_stats_cache.json'
 
 def load_cache(path):
     if os.path.exists(path):
