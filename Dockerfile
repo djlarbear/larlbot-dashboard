@@ -63,8 +63,8 @@ RUN mkdir -p /app/cache /app/memory
 EXPOSE 8000
 
 # Force fresh build - update this timestamp to force rebuild
-# Timestamp: 2026-02-15 19:47 EST
-LABEL build.time="2026-02-15T19:47:00-05:00"
+# Timestamp: 2026-02-19 16:57 EST (forced rebuild to fix Streamlit detection)
+LABEL build.time="2026-02-19T16:57:00-05:00"
 LABEL build.app="larlbot-dashboard-flask-only"
 LABEL build.note="NO Streamlit - Flask only"
 

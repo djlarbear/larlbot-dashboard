@@ -1,0 +1,1402 @@
+{
+  "ncaab_binghamton bearcats": {
+    "timestamp": "2026-02-19T16:20:17.865362",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_bryant bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.866031",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_austin peay governors": {
+    "timestamp": "2026-02-19T16:20:17.866702",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_north florida ospreys": {
+    "timestamp": "2026-02-19T16:20:17.866988",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_william & mary tribe": {
+    "timestamp": "2026-02-19T16:20:17.867230",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_campbell fighting camels": {
+    "timestamp": "2026-02-19T16:20:17.867411",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_fairleigh dickinson knights": {
+    "timestamp": "2026-02-19T16:20:17.867705",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_chicago st cougars": {
+    "timestamp": "2026-02-19T16:20:17.868000",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_gardner-webb bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.868276",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_radford highlanders": {
+    "timestamp": "2026-02-19T16:20:17.868596",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_iupui jaguars": {
+    "timestamp": "2026-02-19T16:20:17.869129",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_wright st raiders": {
+    "timestamp": "2026-02-19T16:20:17.869527",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_memphis tigers": {
+    "timestamp": "2026-02-19T16:20:17.869933",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_south florida bulls": {
+    "timestamp": "2026-02-19T16:20:17.870584",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_wagner seahawks": {
+    "timestamp": "2026-02-19T16:20:17.871503",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_mercyhurst lakers": {
+    "timestamp": "2026-02-19T16:20:17.872099",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_stonehill skyhawks": {
+    "timestamp": "2026-02-19T16:20:17.872817",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_new haven chargers": {
+    "timestamp": "2026-02-19T16:20:17.873842",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_tenn-martin skyhawks": {
+    "timestamp": "2026-02-19T16:20:17.875155",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_arkansas-little rock trojans": {
+    "timestamp": "2026-02-19T16:20:17.877512",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_hampton pirates": {
+    "timestamp": "2026-02-19T16:20:17.878171",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_hofstra pride": {
+    "timestamp": "2026-02-19T16:20:17.879151",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_lindenwood lions": {
+    "timestamp": "2026-02-19T16:20:17.880106",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_tennessee st tigers": {
+    "timestamp": "2026-02-19T16:20:17.880813",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_siu-edwardsville cougars": {
+    "timestamp": "2026-02-19T16:20:17.881698",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_tennessee tech golden eagles": {
+    "timestamp": "2026-02-19T16:20:17.882579",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_csu northridge matadors": {
+    "timestamp": "2026-02-19T16:20:17.883491",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_uc santa barbara gauchos": {
+    "timestamp": "2026-02-19T16:20:17.884302",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_south dakota coyotes": {
+    "timestamp": "2026-02-19T16:20:17.885257",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_denver pioneers": {
+    "timestamp": "2026-02-19T16:20:17.886038",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_uc davis aggies": {
+    "timestamp": "2026-02-19T16:20:17.886808",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_csu fullerton titans": {
+    "timestamp": "2026-02-19T16:20:17.889207",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_eastern washington eagles": {
+    "timestamp": "2026-02-19T16:20:17.890181",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_sacramento st hornets": {
+    "timestamp": "2026-02-19T16:20:17.891004",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_cal poly mustangs": {
+    "timestamp": "2026-02-19T16:20:17.891759",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_hawai'i rainbow warriors": {
+    "timestamp": "2026-02-19T16:20:17.892615",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_atlanta hawks": {
+    "timestamp": "2026-02-19T16:20:17.893454",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_philadelphia 76ers": {
+    "timestamp": "2026-02-19T16:20:17.894241",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_brooklyn nets": {
+    "timestamp": "2026-02-19T16:20:17.895346",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_cleveland cavaliers": {
+    "timestamp": "2026-02-19T16:20:17.896403",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_houston rockets": {
+    "timestamp": "2026-02-19T16:20:17.897417",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_charlotte hornets": {
+    "timestamp": "2026-02-19T16:20:17.898377",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_indiana pacers": {
+    "timestamp": "2026-02-19T16:20:17.899647",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_washington wizards": {
+    "timestamp": "2026-02-19T16:20:17.900778",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_detroit pistons": {
+    "timestamp": "2026-02-19T16:20:17.902019",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_new york knicks": {
+    "timestamp": "2026-02-19T16:20:17.903157",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_toronto raptors": {
+    "timestamp": "2026-02-19T16:20:17.905296",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_chicago bulls": {
+    "timestamp": "2026-02-19T16:20:17.906389",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_phoenix suns": {
+    "timestamp": "2026-02-19T16:20:17.907309",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_san antonio spurs": {
+    "timestamp": "2026-02-19T16:20:17.908069",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_boston celtics": {
+    "timestamp": "2026-02-19T16:20:17.908937",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_golden state warriors": {
+    "timestamp": "2026-02-19T16:20:17.909744",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_orlando magic": {
+    "timestamp": "2026-02-19T16:20:17.910608",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_sacramento kings": {
+    "timestamp": "2026-02-19T16:20:17.911846",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_denver nuggets": {
+    "timestamp": "2026-02-19T16:20:17.912691",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_los angeles clippers": {
+    "timestamp": "2026-02-19T16:20:17.913517",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_texas state bobcats": {
+    "timestamp": "2026-02-19T16:20:17.914410",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_south alabama jaguars": {
+    "timestamp": "2026-02-19T16:20:17.915269",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_tulane green wave": {
+    "timestamp": "2026-02-19T16:20:17.916051",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_north texas mean green": {
+    "timestamp": "2026-02-19T16:20:17.916975",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_south carolina upstate spartans": {
+    "timestamp": "2026-02-19T16:20:17.918308",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_winthrop eagles": {
+    "timestamp": "2026-02-19T16:20:17.919162",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_morehead st eagles": {
+    "timestamp": "2026-02-19T16:20:17.920059",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_eastern illinois panthers": {
+    "timestamp": "2026-02-19T16:20:17.920886",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_southern indiana screaming eagles": {
+    "timestamp": "2026-02-19T16:20:17.921734",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_western illinois leathernecks": {
+    "timestamp": "2026-02-19T16:20:17.922607",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_georgia southern eagles": {
+    "timestamp": "2026-02-19T16:20:17.923483",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_georgia st panthers": {
+    "timestamp": "2026-02-19T16:20:17.924278",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_prairie view panthers": {
+    "timestamp": "2026-02-19T16:20:17.925142",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_miss valley st delta devils": {
+    "timestamp": "2026-02-19T16:20:17.926035",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_alabama a&m bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.926979",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_florida a&m rattlers": {
+    "timestamp": "2026-02-19T16:20:17.927809",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_florida int'l golden panthers": {
+    "timestamp": "2026-02-19T16:20:17.928621",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_liberty flames": {
+    "timestamp": "2026-02-19T16:20:17.929392",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_chattanooga mocs": {
+    "timestamp": "2026-02-19T16:20:17.930560",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_mercer bears": {
+    "timestamp": "2026-02-19T16:20:17.931433",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_texas southern tigers": {
+    "timestamp": "2026-02-19T16:20:17.932248",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_arkansas-pine bluff golden lions": {
+    "timestamp": "2026-02-19T16:20:17.933047",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_vermont catamounts": {
+    "timestamp": "2026-02-19T16:20:17.933923",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_umbc retrievers": {
+    "timestamp": "2026-02-19T16:20:17.934738",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_longwood lancers": {
+    "timestamp": "2026-02-19T16:20:17.935533",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_presbyterian blue hose": {
+    "timestamp": "2026-02-19T16:20:17.936345",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_utah tech trailblazers": {
+    "timestamp": "2026-02-19T16:20:17.937364",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_ut-arlington mavericks": {
+    "timestamp": "2026-02-19T16:20:17.938226",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_unc asheville bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.939057",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_high point panthers": {
+    "timestamp": "2026-02-19T16:20:17.939823",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_samford bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.940617",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_the citadel bulldogs": {
+    "timestamp": "2026-02-19T16:20:17.941395",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_cal baptist lancers": {
+    "timestamp": "2026-02-19T16:20:17.942214",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_utah valley wolverines": {
+    "timestamp": "2026-02-19T16:20:17.942996",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_montana grizzlies": {
+    "timestamp": "2026-02-19T16:20:17.943859",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_idaho state bengals": {
+    "timestamp": "2026-02-19T16:20:17.944680",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_csu bakersfield roadrunners": {
+    "timestamp": "2026-02-19T16:20:17.945467",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_uc riverside highlanders": {
+    "timestamp": "2026-02-19T16:20:17.946302",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_new hampshire wildcats": {
+    "timestamp": "2026-02-19T16:20:17.947200",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_umass lowell river hawks": {
+    "timestamp": "2026-02-19T16:20:17.947979",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_central arkansas bears": {
+    "timestamp": "2026-02-19T16:20:17.948802",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_stetson hatters": {
+    "timestamp": "2026-02-19T16:20:17.949600",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_umkc kangaroos": {
+    "timestamp": "2026-02-19T16:20:17.950534",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  },
+  "ncaab_north dakota fighting hawks": {
+    "timestamp": "2026-02-19T16:20:17.951369",
+    "stats": {
+      "offensive_efficiency": 107,
+      "defensive_efficiency": 107,
+      "pace": 69,
+      "three_pt_pct": 35,
+      "three_pt_def_pct": 36,
+      "ft_pct": 72,
+      "turnover_rate": 18,
+      "strength_score": 100,
+      "_source": "estimated"
+    }
+  }
+}
