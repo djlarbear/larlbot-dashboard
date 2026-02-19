@@ -46,6 +46,40 @@ Reverted entire system to commit **84d9291 (10:00 AM)** - the last fully working
 
 ---
 
+## 🔴 LEARNING ISSUE IDENTIFIED & FIXED (Feb 19, 4:52 PM)
+
+**Problem:** Recurring Streamlit error on Railway - same issue fixed before, came back
+**Root Cause:** Local betting_env had Streamlit installed; Railway's auto-detection was picking it up
+**Solution:** Three-part fix:
+
+1. **Procfile** - Explicitly tells Railway: "Run Flask, not Streamlit"
+   ```
+   web: python betting/scripts/dashboard_server_cache_fixed.py
+   ```
+
+2. **railway.json** - Forces Dockerfile builder, disables auto-detection
+   - No more Railway guessing what to run
+   - Uses Docker ENTRYPOINT (which runs Flask)
+
+3. **.dockerignore** - Excludes betting_env from Docker build
+   - Docker won't see Streamlit installed locally
+   - Clean build from requirements.txt only
+
+**Why We Keep Hitting This:**
+- We need explicit config files (Procfile, railway.json) at root level
+- Docker needs .dockerignore to exclude local venvs
+- Railway's auto-detection can pick wrong framework if not explicitly told
+
+**Lesson Learned:**
+Once you fix a recurring error, you need to DOCUMENT the fix in config files (not just local patches). These files should be in git and checked into every deployment.
+
+**Files Updated:**
+- ✅ Procfile (NEW)
+- ✅ railway.json (NEW)
+- ✅ .dockerignore (NEW)
+- ✅ Dockerfile (already fixed paths)
+- All pushed to GitHub (commit 7488562)
+
 ## ✅ SYSTEM STATUS (STABLE)
 
 **Dashboard:** Working perfectly
