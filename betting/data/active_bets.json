@@ -1,7 +1,63 @@
 {
-  "date": "2026-02-18",
+  "date": "2026-02-19",
   "strategy": "top_10_only",
   "bets": [
+    {
+      "game": "BYU Cougars @ Arizona Wildcats",
+      "sport": "\ud83c\udfc0 NCAA Basketball",
+      "bet_type": "SPREAD",
+      "recommendation": "Arizona Wildcats -10.5",
+      "fanduel_line": "Arizona Wildcats -10.5 / BYU Cougars 10.5",
+      "edge": 24.9,
+      "confidence": 76,
+      "risk_tier": "\ud83d\udfe1 MODERATE RISK",
+      "game_time": "09:05 PM EST",
+      "reason": "\u2022 Model favors Arizona by ~35 points\n\u2022 Strong cover opportunity with 71% confidence\n\u2022 24.9 point edge identified\u2014market inefficiency\n\u2022 Edge Components:\n  - Team strength: 21.1pt",
+      "model_version": "REAL v1.0 (Live OddsAPI)",
+      "data_source": "OddsAPI",
+      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Arizona Wildcats -10.5 (SPREAD) | Bet on Arizona Wildcats to win by 11+ points | Confidence: 71%",
+      "bet_explanation": "Bet on Arizona Wildcats to win by 11+ points",
+      "bookmaker_source": "FanDuel",
+      "smart_edge": 21.0,
+      "smart_edge_quality": "Excellent",
+      "smart_edge_confidence": 85,
+      "smart_edge_reasoning": "Edge Assessment: Excellent (21.050000000000004pt from team strength)",
+      "edge_components": {
+        "team_strength_edge": 21.050000000000004,
+        "injury_edge": 0,
+        "weather_edge": 0,
+        "historical_edge": -0.09899999999999992,
+        "variance_adjustment": 0
+      }
+    },
+    {
+      "game": "Boise State Broncos @ Utah State Aggies",
+      "sport": "\ud83c\udfc0 NCAA Basketball",
+      "bet_type": "SPREAD",
+      "recommendation": "Utah State Aggies -8.5",
+      "fanduel_line": "Utah State Aggies -8.5 / Boise State Broncos 8.5",
+      "edge": 21.9,
+      "confidence": 71,
+      "risk_tier": "\ud83d\udfe1 MODERATE RISK",
+      "game_time": "10:48 PM EST",
+      "reason": "\u2022 Model favors Utah by ~30 points\n\u2022 Strong cover opportunity with 71% confidence\n\u2022 21.9 point edge identified\u2014market inefficiency\n\u2022 Edge Components:",
+      "model_version": "REAL v1.0 (Live OddsAPI)",
+      "data_source": "OddsAPI",
+      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Utah State Aggies -8.5 (SPREAD) | Bet on Utah State Aggies to win by 9+ points | Confidence: 71%",
+      "bet_explanation": "Bet on Utah State Aggies to win by 9+ points",
+      "bookmaker_source": "FanDuel",
+      "smart_edge": -0.1,
+      "smart_edge_quality": "Marginal",
+      "smart_edge_confidence": 55,
+      "smart_edge_reasoning": "Edge Assessment: Marginal (0.0pt from team strength)",
+      "edge_components": {
+        "team_strength_edge": 0.0,
+        "injury_edge": 0,
+        "weather_edge": 0,
+        "historical_edge": -0.09899999999999992,
+        "variance_adjustment": 0
+      }
+    },
     {
       "game": "BYU Cougars @ Arizona Wildcats",
       "sport": "\ud83c\udfc0 NCAA Basketball",
@@ -31,6 +87,34 @@
       "data_quality": "HIGH"
     },
     {
+      "game": "Virginia Cavaliers @ Georgia Tech Yellow Jackets",
+      "sport": "\ud83c\udfc0 NCAA Basketball",
+      "bet_type": "SPREAD",
+      "recommendation": "Virginia Cavaliers -29.5",
+      "fanduel_line": "Georgia Tech Yellow Jackets 29.5 / Virginia Cavaliers -29.5",
+      "edge": 22.8,
+      "confidence": 61,
+      "risk_tier": "\ud83d\udd34 HIGH RISK",
+      "game_time": "09:05 PM EST",
+      "reason": "\u2022 Model favors Virginia by ~52 points\n\u2022 Strong cover opportunity with 61% confidence\n\u2022 22.8 point edge identified\u2014market inefficiency\n\u2022 Edge Components:",
+      "model_version": "REAL v1.0 (Live OddsAPI)",
+      "data_source": "OddsAPI",
+      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Virginia Cavaliers -29.5 (SPREAD) | Bet on Virginia Cavaliers to win straight up or lose by less than 29 points | Confidence: 61%",
+      "bet_explanation": "Bet on Virginia Cavaliers to win straight up or lose by less than 29 points",
+      "bookmaker_source": "FanDuel",
+      "smart_edge": -0.1,
+      "smart_edge_quality": "Marginal",
+      "smart_edge_confidence": 55,
+      "smart_edge_reasoning": "Edge Assessment: Marginal (0.0pt from team strength)",
+      "edge_components": {
+        "team_strength_edge": 0.0,
+        "injury_edge": 0,
+        "weather_edge": 0,
+        "historical_edge": -0.09899999999999992,
+        "variance_adjustment": 0
+      }
+    },
+    {
       "game": "Boise State Broncos @ Utah State Aggies",
       "sport": "\ud83c\udfc0 NCAA Basketball",
       "bet_type": "TOTAL",
@@ -57,34 +141,6 @@
         "historical_edge": -0.24999999999999994
       },
       "data_quality": "HIGH"
-    },
-    {
-      "game": "BYU Cougars @ Arizona Wildcats",
-      "sport": "\ud83c\udfc0 NCAA Basketball",
-      "bet_type": "SPREAD",
-      "recommendation": "Arizona Wildcats -10.5",
-      "fanduel_line": "Arizona Wildcats -10.5 / BYU Cougars 10.5",
-      "edge": 24.9,
-      "confidence": 76,
-      "risk_tier": "\ud83d\udfe1 MODERATE RISK",
-      "game_time": "09:05 PM EST",
-      "reason": "\u2022 Model favors Arizona by ~35 points\n\u2022 Strong cover opportunity with 71% confidence\n\u2022 24.9 point edge identified\u2014market inefficiency\n\u2022 Edge Components:\n  - Team strength: 21.1pt",
-      "model_version": "REAL v1.0 (Live OddsAPI)",
-      "data_source": "OddsAPI",
-      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Arizona Wildcats -10.5 (SPREAD) | Bet on Arizona Wildcats to win by 11+ points | Confidence: 71%",
-      "bet_explanation": "Bet on Arizona Wildcats to win by 11+ points",
-      "bookmaker_source": "FanDuel",
-      "smart_edge": 21.0,
-      "smart_edge_quality": "Excellent",
-      "smart_edge_confidence": 85,
-      "smart_edge_reasoning": "Edge Assessment: Excellent (21.050000000000004pt from team strength)",
-      "edge_components": {
-        "team_strength_edge": 21.050000000000004,
-        "injury_edge": 0,
-        "weather_edge": 0,
-        "historical_edge": -0.09899999999999992,
-        "variance_adjustment": 0
-      }
     },
     {
       "game": "Colorado St Rams @ UNLV Rebels",
@@ -169,62 +225,6 @@
         "historical_edge": -0.24999999999999994
       },
       "data_quality": "HIGH"
-    },
-    {
-      "game": "Boise State Broncos @ Utah State Aggies",
-      "sport": "\ud83c\udfc0 NCAA Basketball",
-      "bet_type": "SPREAD",
-      "recommendation": "Utah State Aggies -8.5",
-      "fanduel_line": "Utah State Aggies -8.5 / Boise State Broncos 8.5",
-      "edge": 21.9,
-      "confidence": 71,
-      "risk_tier": "\ud83d\udfe1 MODERATE RISK",
-      "game_time": "10:48 PM EST",
-      "reason": "\u2022 Model favors Utah by ~30 points\n\u2022 Strong cover opportunity with 71% confidence\n\u2022 21.9 point edge identified\u2014market inefficiency\n\u2022 Edge Components:",
-      "model_version": "REAL v1.0 (Live OddsAPI)",
-      "data_source": "OddsAPI",
-      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Utah State Aggies -8.5 (SPREAD) | Bet on Utah State Aggies to win by 9+ points | Confidence: 71%",
-      "bet_explanation": "Bet on Utah State Aggies to win by 9+ points",
-      "bookmaker_source": "FanDuel",
-      "smart_edge": -0.1,
-      "smart_edge_quality": "Marginal",
-      "smart_edge_confidence": 55,
-      "smart_edge_reasoning": "Edge Assessment: Marginal (0.0pt from team strength)",
-      "edge_components": {
-        "team_strength_edge": 0.0,
-        "injury_edge": 0,
-        "weather_edge": 0,
-        "historical_edge": -0.09899999999999992,
-        "variance_adjustment": 0
-      }
-    },
-    {
-      "game": "Virginia Cavaliers @ Georgia Tech Yellow Jackets",
-      "sport": "\ud83c\udfc0 NCAA Basketball",
-      "bet_type": "SPREAD",
-      "recommendation": "Virginia Cavaliers -29.5",
-      "fanduel_line": "Georgia Tech Yellow Jackets 29.5 / Virginia Cavaliers -29.5",
-      "edge": 22.8,
-      "confidence": 61,
-      "risk_tier": "\ud83d\udd34 HIGH RISK",
-      "game_time": "09:05 PM EST",
-      "reason": "\u2022 Model favors Virginia by ~52 points\n\u2022 Strong cover opportunity with 61% confidence\n\u2022 22.8 point edge identified\u2014market inefficiency\n\u2022 Edge Components:",
-      "model_version": "REAL v1.0 (Live OddsAPI)",
-      "data_source": "OddsAPI",
-      "bet_instructions": "\ud83d\udccd PLACE BET ON FanDuel: Virginia Cavaliers -29.5 (SPREAD) | Bet on Virginia Cavaliers to win straight up or lose by less than 29 points | Confidence: 61%",
-      "bet_explanation": "Bet on Virginia Cavaliers to win straight up or lose by less than 29 points",
-      "bookmaker_source": "FanDuel",
-      "smart_edge": -0.1,
-      "smart_edge_quality": "Marginal",
-      "smart_edge_confidence": 55,
-      "smart_edge_reasoning": "Edge Assessment: Marginal (0.0pt from team strength)",
-      "edge_components": {
-        "team_strength_edge": 0.0,
-        "injury_edge": 0,
-        "weather_edge": 0,
-        "historical_edge": -0.09899999999999992,
-        "variance_adjustment": 0
-      }
     },
     {
       "game": "Vanderbilt Commodores @ Missouri Tigers",
