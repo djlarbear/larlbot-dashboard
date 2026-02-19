@@ -4,21 +4,6 @@ All times in **America/Detroit (EST)** timezone.
 
 ## Active Jobs
 
-### 🌅 Daily Betting Workflow - 5:00 AM
-**Cron:** `0 5 * * *`  
-**Script:** `python3 /Users/macmini/.openclaw/workspace/daily_betting_workflow.py`  
-**Session:** Main  
-**Purpose:** Batched morning workflow
-- Fetch yesterday's game scores
-- Run learning engine on completed bets
-- Update adaptive weights based on performance
-- Generate today's top 10 picks
-
-**Status:** ✅ Enabled  
-**Last run:** Check via `openclaw cron runs <job-id>`
-
----
-
 ### 🧠 Daily Memory Review - 2:00 AM
 **Cron:** `0 2 * * *`  
 **Model:** Haiku  
@@ -31,18 +16,62 @@ All times in **America/Detroit (EST)** timezone.
 - Store automation suggestions
 
 **Status:** ✅ Enabled  
-**Delivery:** Auto-announce to chat
+**Delivery:** Telegram announcement  
+**ID:** `22ec8472-01dc-4754-9240-bbaca796e13a`
 
 ---
 
-## Planned Jobs (Not Yet Created)
+### 🌅 Daily Betting Workflow - 5:00 AM
+**Cron:** `0 5 * * *`  
+**Script:** `python3 /Users/macmini/.openclaw/workspace/daily_betting_workflow.py`  
+**Session:** Main  
+**Purpose:** Batched morning workflow
+- Fetch yesterday's game scores
+- Run learning engine on completed bets
+- Update adaptive weights based on performance
+- Generate today's top 10 picks
 
-### 📊 Dashboard Health Check - Every 30 min
-**Cron:** `*/30 * * * *`  
-**Purpose:** Verify dashboard is running
-- Check localhost:5001 responds
-- Check Railway deployment
-- Alert if down
+**Status:** ✅ Enabled  
+**Delivery:** None (main session)  
+**ID:** `265e8ef7-a9bd-4502-840b-e7fe092dc4ea`
+
+---
+
+### 📊 Morning Betting Report - 5:15 AM
+**Cron:** `15 5 * * *`  
+**Model:** Haiku  
+**Session:** Isolated (subagent)  
+**Purpose:** Morning status report after workflow
+- Run quick_status.sh
+- Verify picks generated
+- Check dashboard status
+- Report top 3 picks
+- Flag any errors
+
+**Status:** ✅ Enabled  
+**Delivery:** Telegram announcement  
+**ID:** `af2947e4-9c76-4a94-8299-34fc47333512`
+
+---
+
+### 🚨 Error Monitor - Every 6 Hours
+**Cron:** `0 */6 * * *` (12 AM, 6 AM, 12 PM, 6 PM)  
+**Model:** Haiku  
+**Session:** Isolated (subagent)  
+**Purpose:** Proactive error detection
+- Check logs for errors (last 6h)
+- Verify dashboard running
+- Check for stuck bets (>24h pending)
+- Git uncommitted changes
+- Disk space check
+
+**Status:** ✅ Enabled  
+**Delivery:** Telegram (only if issues found, HEARTBEAT_OK if clear)  
+**ID:** `766954f0-ac66-43fd-8f1b-3e3cb35c694b`
+
+---
+
+## Planned Jobs (Ideas for Later)
 
 ### 🔄 Git Auto-Sync - Daily at 11:59 PM
 **Cron:** `59 23 * * *`  
