@@ -140,4 +140,25 @@
 - Also flagged false positives: "missing score fetcher" was just wrong path
 - **Lesson: always verify GPT-5-mini findings against actual code before acting**
 
-*Last Updated: Feb 18, 10:55 PM EST*
+## 🗂️ WORKSPACE REORGANIZATION (Feb 18, 11:43-11:52 PM)
+
+**Complete:** 320 files organized, 15KB docs created, git initialized ✅
+
+**Structure:**
+- `betting/{scripts,data,models,logs}` - All betting code + data separated
+- `docs/{architecture,sessions,analysis}` - Comprehensive documentation
+- `templates/` - Reusable daily_summary + audit_checklist
+- `scripts/quick_status.sh` - One-command health check
+
+**Key Fixes:**
+- Dashboard paths → `betting/data/`
+- Logs → `betting/logs/`
+- Database table: `teams` → `team_stats`
+- Git: 3 commits, all changes tracked
+
+**New Guidelines (Stored):**
+- Efficiency: Haiku for routine, Sonnet for complex, concise by default
+- Self-improvement: Learn from every interaction, store in memory, adjust
+- Daily memory review: 2 AM cron (Haiku subagent)
+
+*Last Updated: Feb 18, 11:52 PM EST*
