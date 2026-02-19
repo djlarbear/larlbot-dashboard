@@ -161,4 +161,15 @@
 - Self-improvement: Learn from every interaction, store in memory, adjust
 - Daily memory review: 2 AM cron (Haiku subagent)
 
-*Last Updated: Feb 18, 11:52 PM EST*
+## 📱 TELEGRAM NOTIFICATIONS (Feb 19, 12:00 AM)
+
+**Status:** Active ✅ (ID: `telegram:2134752560`)
+
+**Automated Notifications:**
+- **2:00 AM** - Daily memory review summary
+- **5:15 AM** - Morning betting report (picks, status, errors)
+- **Every 6h** - Error monitor (only if issues detected)
+
+**Silent unless issues:** Error monitor uses HEARTBEAT_OK when all clear.
+
+*Last Updated: Feb 19, 12:00 AM EST*
