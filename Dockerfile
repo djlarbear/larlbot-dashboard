@@ -10,6 +10,9 @@ FROM python:3.11-slim
 # Set working directory
 WORKDIR /app
 
+# Set WORKSPACE environment variable for Flask app
+ENV WORKSPACE=/app
+
 # Copy ONLY requirements.txt (nothing else at this point)
 COPY requirements.txt /app/requirements.txt
 
@@ -35,22 +38,23 @@ except ImportError:
     print("✓ Streamlit NOT installed (correct)")
 EOF
 
-# Copy Flask application
-COPY dashboard_server_cache_fixed.py /app/
+# Copy Flask application (from betting/scripts/)
+COPY betting/scripts/dashboard_server_cache_fixed.py /app/
 
 # Copy startup script
 COPY entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
-# Copy web assets
+# Copy web assets (from root level)
 COPY templates/ /app/templates/
 COPY static/ /app/static/
 
-# Copy data files (bet tracking, rankings, etc.)
-# These provide initial data for the dashboard
-COPY ranked_bets.json /app/ranked_bets.json
-COPY active_bets.json /app/active_bets.json
-COPY completed_bets_2026-02-*.json /app/
+# Create betting/data directory structure
+RUN mkdir -p /app/betting/data /app/betting/scripts
+
+# Copy data files to proper locations (Flask app expects betting/data/)
+COPY betting/data/ranked_bets.json /app/betting/data/ranked_bets.json
+COPY betting/data/active_bets.json /app/betting/data/active_bets.json
 
 # Create data directory for runtime files and logs
 RUN mkdir -p /app/cache /app/memory
