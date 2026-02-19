@@ -1,29 +1,43 @@
-__pycache__
+# Exclude local virtual environment - Docker builds from requirements.txt
+betting_env/
+venv/
+.venv/
+
+# Exclude git
+.git/
+.gitignore
+
+# Exclude node modules
+node_modules/
+
+# Exclude cache/logs
+__pycache__/
 *.pyc
 *.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
-.git
-.gitignore
-.env
-.venv
-venv/
-betting_env/
 *.log
-.DS_Store
-.pytest_cache/
-.coverage
-.hypothesis/
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db
+.cache/
 
-# Keep these files/dirs - needed for the app
-# - *.json (bet tracking data)
-# - memory/ (user-specific notes)
-# - cache/ (app cache)
-# - *.db (databases)
+# Exclude archives
+archive/
+backup/
+
+# Exclude docs (not needed in image)
+docs/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude test files
+tests/
+test_*.py
+
+# Exclude agent dirs (not needed)
+agents/
+
+# Exclude old/backup files
+*_OLD*
+*_BACKUP*
+*.bak
