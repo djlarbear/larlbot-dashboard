@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "date": "2026-02-15",
+    "time": "08:55:29",
+    "game": "UTSA Roadrunners @ Charlotte 49ers",
+    "chosen": {
+      "recommendation": "UTSA Roadrunners +14.5",
+      "bet_type": "SPREAD",
+      "spread_value": 14.5,
+      "confidence": 84,
+      "edge": 5.8,
+      "ways_to_win": 2,
+      "reasoning": "Underdog spread with multiple winning paths + lower variance"
+    },
+    "alternatives": [
+      {
+        "recommendation": "Charlotte 49ers -14.5",
+        "bet_type": "SPREAD",
+        "confidence": 94,
+        "edge": 5.8,
+        "ways_to_win": 1,
+        "rationale": "Higher stated confidence but higher variance (need 15+ pt win)"
+      }
+    ],
+    "rationale": "\nDECISION: Switch from Charlotte -14.5 to UTSA +14.5\n\nREASONING:\n1. SAME EDGE (5.8pt) - Both bets have identical point value\n2. LOWER VARIANCE - UTSA +14.5 has 2 ways to win (lose by <14.5 or win outright)\n3. ALIGNMENT - UTSA's 84% ML confidence suggests they can win straight up\n4. RISK/REWARD - Underdog spreads historically outperform tight favorites\n5. LEARNING - Analysis shows 82% of losses were tight favorites; underdog spreads won\n\nThis decision prioritizes RISK-ADJUSTED RETURNS over higher stated confidence.\nSame profit potential, but multiple paths to success (lower variance).\n    ",
+    "tags": [
+      "underdog_value",
+      "variance_reduction",
+      "multiple_paths"
+    ],
+    "outcome": null,
+    "outcome_recorded_at": null
+  }
+]

@@ -1,0 +1,271 @@
+{
+  "date": "2026-02-15",
+  "timestamp": "2026-02-15T17:08:42.428454",
+  "wins": {
+    "data": [
+      {
+        "rank": 1,
+        "timestamp": "2026-02-15T17:08:42.428358",
+        "game": "UTSA @ Charlotte",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 147.5",
+        "larlscore": 14.1,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 2,
+        "timestamp": "2026-02-15T17:08:42.428370",
+        "game": "Maryland @ Rutgers",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 143.5",
+        "larlscore": 13.84,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 3,
+        "timestamp": "2026-02-15T17:08:42.428373",
+        "game": "Utah @ Cincinnati",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 137.5",
+        "larlscore": 13.65,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 4,
+        "timestamp": "2026-02-15T17:08:42.428375",
+        "game": "Manhattan @ Canisius",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 140.5",
+        "larlscore": 13.46,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 5,
+        "timestamp": "2026-02-15T17:08:42.428376",
+        "game": "Denver @ Omaha",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 160.5",
+        "larlscore": 12.7,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 7,
+        "timestamp": "2026-02-15T17:08:42.428378",
+        "game": "Utah @ Cincinnati",
+        "bet_type": "SPREAD",
+        "recommendation": "Cincinnati -11.5",
+        "larlscore": 2.02,
+        "confidence": 94,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 8,
+        "timestamp": "2026-02-15T17:08:42.428380",
+        "game": "Indiana @ Illinois",
+        "bet_type": "SPREAD",
+        "recommendation": "Illinois -10.5",
+        "larlscore": 1.95,
+        "confidence": 93,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      },
+      {
+        "rank": 9,
+        "timestamp": "2026-02-15T17:08:42.428382",
+        "game": "Drake @ Northern Iowa",
+        "bet_type": "SPREAD",
+        "recommendation": "Northern Iowa -9.5",
+        "larlscore": 1.65,
+        "confidence": 93,
+        "edge": 0,
+        "why_it_worked": "Verify after game",
+        "confidence_calibration": "ACCURATE",
+        "edge_calculation": "ACCURATE"
+      }
+    ],
+    "analysis": {
+      "total_wins": 8,
+      "by_bet_type": {
+        "TOTAL": {
+          "count": 5,
+          "avg_conf": 0,
+          "avg_edge": 0
+        },
+        "SPREAD": {
+          "count": 3,
+          "avg_conf": 0,
+          "avg_edge": 0
+        }
+      },
+      "average_confidence": 86.2,
+      "average_edge": 0.0,
+      "average_larlscore": 9.17,
+      "patterns": [
+        {
+          "pattern": "TOTAL bets dominating",
+          "count": 5,
+          "implication": "TOTALs are our strongest category - allocate more"
+        }
+      ]
+    }
+  },
+  "losses": {
+    "data": [
+      {
+        "rank": 6,
+        "timestamp": "2026-02-15T17:08:42.428386",
+        "game": "UTSA @ Charlotte",
+        "bet_type": "SPREAD",
+        "recommendation": "UTSA +14.5",
+        "larlscore": 2.28,
+        "confidence": 84,
+        "edge": 0,
+        "why_it_lost": "UTSA confidence was too high - team underperformed",
+        "confidence_too_high": true,
+        "edge_miscalculated": false,
+        "data_issue": false
+      },
+      {
+        "rank": 1,
+        "timestamp": "2026-02-15T17:08:42.428389",
+        "game": "UTSA @ Charlotte",
+        "bet_type": "TOTAL",
+        "recommendation": "UNDER 147.5",
+        "larlscore": 14.1,
+        "confidence": 82,
+        "edge": 0,
+        "why_it_lost": "Total was accurate but game scored more than predicted",
+        "confidence_too_high": false,
+        "edge_miscalculated": true,
+        "data_issue": false
+      }
+    ],
+    "analysis": {
+      "total_losses": 2,
+      "by_bet_type": {
+        "SPREAD": {
+          "count": 1
+        },
+        "TOTAL": {
+          "count": 1
+        }
+      },
+      "average_confidence": 83.0,
+      "average_edge": 0.0,
+      "average_larlscore": 8.19,
+      "failure_patterns": [
+        {
+          "issue": "Confidence Too High",
+          "count": 1,
+          "action": "Lower confidence thresholds for affected bet types"
+        },
+        {
+          "issue": "Edge Miscalculation",
+          "count": 1,
+          "action": "Review edge calculation formula, recalibrate weights"
+        }
+      ]
+    }
+  },
+  "model_improvements": {
+    "timestamp": "2026-02-15T17:08:42.428474",
+    "total_outcomes": 10,
+    "win_rate": "80.0%",
+    "wins": {
+      "total_wins": 8,
+      "by_bet_type": {
+        "TOTAL": {
+          "count": 5,
+          "avg_conf": 0,
+          "avg_edge": 0
+        },
+        "SPREAD": {
+          "count": 3,
+          "avg_conf": 0,
+          "avg_edge": 0
+        }
+      },
+      "average_confidence": 86.2,
+      "average_edge": 0.0,
+      "average_larlscore": 9.17,
+      "patterns": [
+        {
+          "pattern": "TOTAL bets dominating",
+          "count": 5,
+          "implication": "TOTALs are our strongest category - allocate more"
+        }
+      ]
+    },
+    "losses": {
+      "total_losses": 2,
+      "by_bet_type": {
+        "SPREAD": {
+          "count": 1
+        },
+        "TOTAL": {
+          "count": 1
+        }
+      },
+      "average_confidence": 83.0,
+      "average_edge": 0.0,
+      "average_larlscore": 8.19,
+      "failure_patterns": [
+        {
+          "issue": "Confidence Too High",
+          "count": 1,
+          "action": "Lower confidence thresholds for affected bet types"
+        },
+        {
+          "issue": "Edge Miscalculation",
+          "count": 1,
+          "action": "Review edge calculation formula, recalibrate weights"
+        }
+      ]
+    },
+    "recommended_changes": [
+      {
+        "source": "FROM WINS",
+        "pattern": "TOTAL bets dominating",
+        "action": "TOTALs are our strongest category - allocate more",
+        "priority": "HIGH"
+      },
+      {
+        "source": "FROM LOSSES",
+        "issue": "Confidence Too High",
+        "action": "Lower confidence thresholds for affected bet types",
+        "priority": "HIGH"
+      },
+      {
+        "source": "FROM LOSSES",
+        "issue": "Edge Miscalculation",
+        "action": "Review edge calculation formula, recalibrate weights",
+        "priority": "HIGH"
+      }
+    ]
+  }
+}

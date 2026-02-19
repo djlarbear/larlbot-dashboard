@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LarlBot Betting Dashboard 🎰</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #1a1a2e 75%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #a855f7 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 1rem 0;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #34c759;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.5rem;
+        }
+        
+        .btn {
+            background: rgba(52, 199, 89, 0.2);
+            border: 1px solid rgba(52, 199, 89, 0.4);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: rgba(52, 199, 89, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .status-good { color: #34c759; }
+        .status-warning { color: #f59e0b; }
+        .status-error { color: #ef4444; }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div style="font-size: 8rem; margin-bottom: 1rem;">🎰</div>
+            <h1 class="hero-title">LarlBot</h1>
+            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.7);">Sports Betting Intelligence</p>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">133</div>
+                <div class="metric-label">Games Today</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value status-good">🟢 Online</div>
+                <div class="metric-label">System Status</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">09:00 AM</div>
+                <div class="metric-label">Last Update</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">4 Sports</div>
+                <div class="metric-label">Markets Active</div>
+            </div>
+        </div>
+        
+        <div class="glass-card">
+            <h3>🎯 System Status</h3>
+            <p style="margin: 1rem 0;"><span class="status-good">✅ Data Collection:</span> 133 NCAA Basketball games loaded</p>
+            <p style="margin: 1rem 0;"><span class="status-good">✅ Sports Coverage:</span> NBA, NCAA Basketball, MLB, NFL</p>
+            <p style="margin: 1rem 0;"><span class="status-good">✅ Logo & Design:</span> Fixed and displaying properly</p>
+            <p style="margin: 1rem 0;"><span class="status-warning">⚠️ Full Analysis:</span> Optimizing to prevent crashes</p>
+            <p style="margin: 1rem 0;"><span class="status-good">✅ Dashboard:</span> Now stable with HTML version</p>
+        </div>
+        
+        <div class="glass-card">
+            <h3>🏀 Today's Games Summary</h3>
+            <p style="margin: 1rem 0;"><strong>NCAA Basketball:</strong> 133 games with live odds</p>
+            <p style="margin: 1rem 0;"><strong>NBA:</strong> Multiple games ready for analysis</p>
+            <p style="margin: 1rem 0;"><strong>MLB & NFL:</strong> Games loaded and ready</p>
+            <p style="margin: 1rem 0; color: rgba(255, 255, 255, 0.7);">Fresh data collected at 09:00 AM EST</p>
+        </div>
+        
+        <div class="glass-card">
+            <h3>🔧 Next Steps</h3>
+            <p style="margin: 1rem 0;">• Working on memory-optimized betting analyzer</p>
+            <p style="margin: 1rem 0;">• Will restore full value bet detection once stable</p>
+            <p style="margin: 1rem 0;">• Dashboard now loads reliably without crashes</p>
+            <p style="margin: 1rem 0;">• All your fresh sports data is ready for analysis</p>
+        </div>
+        
+        <div class="footer">
+            We Love Big Fat Rodents 🐭 | Powered by LarlBot AI
+        </div>
+    </div>
+</body>
+</html>

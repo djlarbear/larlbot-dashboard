@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-02-18T10:41:07.607834",
+  "calibration": {
+    "90-100%": {
+      "original_confidence": 95,
+      "actual_win_rate": 40.0,
+      "expected_win_rate": 95.0,
+      "adjustment": -55.0,
+      "recommended_confidence": 50
+    },
+    "80-89%": {
+      "original_confidence": 85,
+      "actual_win_rate": 47.6,
+      "expected_win_rate": 85.0,
+      "adjustment": -37.4,
+      "recommended_confidence": 50
+    }
+  },
+  "instructions": "Apply these adjustments when generating picks"
+}

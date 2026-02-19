@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug - Bets API Test</title>
+    <style>
+        body { background: #1a1a1a; color: white; font-family: Arial; padding: 20px; }
+        .section { background: #333; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .bet { background: #444; padding: 10px; margin: 10px 0; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>API Debug Test</h1>
+    <div id="status">Loading...</div>
+    <div id="content"></div>
+    
+    <script>
+        fetch('/api/bets')
+            .then(r => r.json())
+            .then(bets => {
+                console.log('Received bets:', bets.length);
+                let html = `<h2>Total Bets: ${bets.length}</h2>`;
+                
+                const lowBets = bets.filter(b => b.risk_tier && b.risk_tier.includes('LOW'));
+                const modBets = bets.filter(b => b.risk_tier && b.risk_tier.includes('MODERATE'));
+                const highBets = bets.filter(b => b.risk_tier && b.risk_tier.includes('HIGH'));
+                
+                html += `<div class="section">
+                    <h3>LOW RISK: ${lowBets.length}</h3>
+                    ${lowBets.map(b => `<div class="bet">${b.recommendation}</div>`).join('')}
+                </div>`;
+                
+                html += `<div class="section">
+                    <h3>MODERATE RISK: ${modBets.length}</h3>
+                    ${modBets.map(b => `<div class="bet">${b.recommendation}</div>`).join('')}
+                </div>`;
+                
+                html += `<div class="section">
+                    <h3>HIGH RISK: ${highBets.length}</h3>
+                    ${highBets.map(b => `<div class="bet">${b.recommendation}</div>`).join('')}
+                </div>`;
+                
+                document.getElementById('status').innerHTML = '✅ API Working';
+                document.getElementById('content').innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('status').innerHTML = `❌ Error: ${err}`;
+            });
+    </script>
+</body>
+</html>

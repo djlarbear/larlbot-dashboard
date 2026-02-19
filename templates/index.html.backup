@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>🎰 LarlBot</title>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom Styles (cache-busted) -->
+    <link rel="stylesheet" href="/static/style.css?v=2026021518220101">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 2rem;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        #app {
+            display: none;
+        }
+        
+        #app.ready {
+            display: block;
+        }
+        
+        .loading-screen.hidden {
+            display: none;
+        }
+        
+        /* HEADER STYLES */
+        .dashboard-header {
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.02) 100%);
+            border: 1.5px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+        }
+        
+        .dashboard-title {
+            margin: 0;
+            padding: 0;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .dashboard-subtitle {
+            margin: 1rem 0 0 0;
+            padding: 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+        }
+        
+        /* TABS STYLES */
+        .tabs-container {
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .tabs-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0;
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 1.2rem 1rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2.5px solid transparent;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+        
+        .tab-btn:hover {
+            background: rgba(139, 92, 246, 0.05);
+        }
+        
+        .tab-btn.active {
+            color: white;
+            border-bottom-color: #8b5cf6;
+        }
+        
+        .tab-btn.inactive {
+            color: rgba(255, 255, 255, 0.5);
+            border-bottom-color: transparent;
+        }
+        
+        .tab-count {
+            background: rgba(139, 92, 246, 0.3);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.4rem;
+            font-weight: 700;
+        }
+        
+        /* MAIN CONTENT */
+        .content-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* STATS SECTION */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .stat-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+        
+        .stat-card.winrate {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.02) 100%);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+        
+        .stat-card.record {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.02) 100%);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+        
+        .stat-card.total {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.02) 100%);
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+        
+        .stat-card.winrate .stat-value { color: #8b5cf6; }
+        .stat-card.record .stat-value { color: #22c55e; }
+        .stat-card.total .stat-value { color: #3b82f6; }
+        
+        /* BETS GRID - FIXED 2 COLUMNS */
+        .bets-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .bets-grid.hidden {
+            display: none;
+        }
+        
+        /* Date Header Cards */
+        .date-header-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.25) !important;
+        }
+        
+        /* SECTION HEADERS */
+        .section-header {
+            margin: 2.5rem 0 1.5rem 0;
+            padding: 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .section-header-icon {
+            font-size: 1.4rem;
+        }
+        
+        /* TOP 10 RECOMMENDATIONS CARD SECTION */
+        .top-10-section {
+            margin: 2.5rem 0 1.5rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.02) 100%);
+            border: 1.5px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+        }
+        
+        .top-10-section-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            letter-spacing: 0.5px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .top-10-emoji {
+            font-size: 1.5rem;
+        }
+        
+        /* EMPTY STATE */
+        .empty-state {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        /* GAMES FINISHED CARD */
+        .games-finished-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.02) 100%);
+            border: 1.5px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+            margin-bottom: 2rem;
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: 90%;
+            max-width: 600px;
+        }
+        
+        .games-finished-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+        
+        .games-finished-card-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #22c55e;
+            margin-bottom: 0.4rem;
+        }
+        
+        .games-finished-card-text {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+        }
+        
+        .games-finished-card-text strong {
+            color: white;
+            font-weight: 600;
+        }
+        
+        /* FOOTER */
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-card {
+            padding: 1.2rem 2rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.02) 100%);
+            border: 1.5px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen" class="loading-screen">
+        <p>🎰 Loading LarlBot...</p>
+    </div>
+    
+    <!-- MAIN APP -->
+    <div id="app">
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <div class="header-container">
+                <h1 class="dashboard-title">
+                    <span>🎰</span>
+                    <span>LarlBot Dashboard</span>
+                    <span>🎰</span>
+                </h1>
+            </div>
+        </div>
+        
+        <!-- TABS -->
+        <div class="tabs-container">
+            <div class="tabs-wrapper">
+                <button onclick="showTab('today')" id="tab-today" class="tab-btn active">
+                    <span>📊</span>
+                    <span>Today's Bets</span>
+                </button>
+                <button onclick="showTab('previous')" id="tab-previous" class="tab-btn inactive">
+                    <span>📈</span>
+                    <span>Previous Results</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <!-- TODAY'S BETS TAB -->
+            <div id="tab-content-today" style="display: block;">
+                <!-- STATS -->
+                <div class="stats-grid">
+                    <div class="stat-card winrate">
+                        <div class="stat-label">Win Rate</div>
+                        <div class="stat-value" id="stat-winrate">--</div>
+                    </div>
+                    <div class="stat-card record">
+                        <div class="stat-label">Record</div>
+                        <div class="stat-value" id="stat-record">0-0</div>
+                    </div>
+                    <div class="stat-card total">
+                        <div class="stat-label">Total Bets</div>
+                        <div class="stat-value" id="stat-total">0</div>
+                    </div>
+                </div>
+                
+                <!-- TOP 10 SECTION -->
+                <div class="top-10-section">
+                    <h2 class="top-10-section-title">
+                        <span class="top-10-emoji">⭐</span>
+                        <span>Top 10 Recommendations</span>
+                        <span class="top-10-emoji">⭐</span>
+                    </h2>
+                </div>
+                <div class="bets-grid" id="top-10-container">
+                    <div class="empty-state">Loading recommendations...</div>
+                </div>
+            </div>
+            
+            <!-- PREVIOUS RESULTS TAB -->
+            <div id="tab-content-previous" style="display: none;">
+                <!-- STATS (Same as Today's Tab) -->
+                <div class="stats-grid">
+                    <div class="stat-card winrate">
+                        <div class="stat-label">Win Rate</div>
+                        <div class="stat-value" id="stat-winrate-previous">--</div>
+                    </div>
+                    <div class="stat-card record">
+                        <div class="stat-label">Record</div>
+                        <div class="stat-value" id="stat-record-previous">0-0</div>
+                    </div>
+                    <div class="stat-card total">
+                        <div class="stat-label">Total Bets</div>
+                        <div class="stat-value" id="stat-total-previous">0</div>
+                    </div>
+                </div>
+                
+                <div id="results-container"></div>
+            </div>
+
+            <!-- MISSION CONTROL TAB -->
+            <div id="tab-content-mission" style="display: none;">
+                <!-- MISSION STATUS HEADER -->
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">🚀 Mission Control</h2>
+                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.95rem;">Real-Time Betting Operations Dashboard</p>
+                </div>
+
+                <!-- MISSION STATS GRID -->
+                <div class="stats-grid" style="margin-bottom: 2rem;">
+                    <div class="stat-card" style="border: 1.5px solid rgba(139, 92, 246, 0.4); background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%);">
+                        <div class="stat-label">System Status</div>
+                        <div class="stat-value" id="mission-status" style="color: #4ade80;">● OPERATIONAL</div>
+                    </div>
+                    <div class="stat-card" style="border: 1.5px solid rgba(139, 92, 246, 0.4); background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%);">
+                        <div class="stat-label">Active Bets</div>
+                        <div class="stat-value" id="mission-active">0</div>
+                    </div>
+                    <div class="stat-card" style="border: 1.5px solid rgba(139, 92, 246, 0.4); background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%);">
+                        <div class="stat-label">Completed Today</div>
+                        <div class="stat-value" id="mission-completed">0</div>
+                    </div>
+                </div>
+
+                <!-- MISSION PANELS -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- LIVE BETS PANEL -->
+                    <div style="border: 1.5px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%); backdrop-filter: blur(20px);">
+                        <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⚡</span>
+                            <span>Live Active Bets</span>
+                        </h3>
+                        <div id="mission-active-bets" style="space-y: 1rem;">
+                            <p style="color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;">Loading...</p>
+                        </div>
+                    </div>
+
+                    <!-- CONFIDENCE PANEL -->
+                    <div style="border: 1.5px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%); backdrop-filter: blur(20px);">
+                        <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>📊</span>
+                            <span>Performance Metrics</span>
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                                    <span style="color: rgba(255, 255, 255, 0.7);">Confidence Level</span>
+                                    <span style="color: white; font-weight: 600;" id="mission-confidence">85%</span>
+                                </div>
+                                <div style="background: rgba(139, 92, 246, 0.2); height: 8px; border-radius: 4px; overflow: hidden;">
+                                    <div id="mission-confidence-bar" style="background: linear-gradient(90deg, #8b5cf6, #6d28d9); height: 100%; width: 85%; transition: width 0.3s;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                                    <span style="color: rgba(255, 255, 255, 0.7);">Today's Win Rate</span>
+                                    <span style="color: #4ade80; font-weight: 600;" id="mission-winrate">80%</span>
+                                </div>
+                                <div style="background: rgba(139, 92, 246, 0.2); height: 8px; border-radius: 4px; overflow: hidden;">
+                                    <div id="mission-winrate-bar" style="background: linear-gradient(90deg, #4ade80, #22c55e); height: 100%; width: 80%; transition: width 0.3s;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SYSTEM STATUS PANEL -->
+                <div style="border: 1.5px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%); backdrop-filter: blur(20px);">
+                    <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>🔧</span>
+                        <span>System Health</span>
+                    </h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Flask Server</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;">ONLINE</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">API Health</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;">200 OK</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Data Sync</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;">SYNCED</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Cache Status</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;">FRESH</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Uptime</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;">24/7 Active</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Response Time</span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);"></span>
+                            </div>
+                            <p style="color: #4ade80; font-size: 0.85rem;"><150ms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer-container">
+            <div class="footer-card">
+                Designed by LarlBot • We Love Big Fat Rodents 🐀
+            </div>
+        </div>
+    </div>
+    
+    <!-- SCRIPTS (cache-busted) - Using v3.0 production-grade script with timezone fixes -->
+    <script src="/static/script_v3.js?v=2026021518300000"></script>
+    
+    <!-- INITIALIZATION -->
+    <script>
+        // NOTE: showTab() is defined in script_v3.js - DO NOT redefine here!
+        // The script_v3.js version includes Previous Results loading logic.
+        
+        // Hide loading when ready
+        window.hideLoading = function() {
+            document.getElementById('loading-screen').classList.add('hidden');
+            document.getElementById('app')?.classList.add('ready');
+        };
+    </script>
+</body>
+</html>

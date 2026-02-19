@@ -1,0 +1,59 @@
+[
+  {
+    "id": "11096ba7-09e2-4347-91e0-6c7117c8c282",
+    "name": "Jarvis ⚙️",
+    "role": "CEO / Orchestrator",
+    "status": "running",
+    "last_activity": "Dispatching betting work",
+    "recent_work": [
+      "Spawned Sword for daily picks",
+      "Coordinated frontend/backend deployment",
+      "Reviewed task decomposition"
+    ],
+    "created_at": "2026-02-17T03:33:34.258Z",
+    "updated_at": "2026-02-17T03:33:34.258Z"
+  },
+  {
+    "id": "1d72d617-075f-49ad-b365-fd1e427d80e3",
+    "name": "Sword 🗡️",
+    "role": "Betting Specialist",
+    "status": "running",
+    "last_activity": "Game status check (15 min cycle)",
+    "recent_work": [
+      "Generated 22 daily picks",
+      "Tracked 45 active bets",
+      "Learning engine update",
+      "GitHub sync"
+    ],
+    "created_at": "2026-02-17T03:33:34.867Z",
+    "updated_at": "2026-02-17T03:33:34.867Z"
+  },
+  {
+    "id": "0894ad64-4315-439f-b042-062cc65a504c",
+    "name": "Pixel 👨‍💻",
+    "role": "Frontend Developer",
+    "status": "idle",
+    "last_activity": "Deployed Mission Control v5",
+    "recent_work": [
+      "Fixed dashboard metrics display",
+      "Implemented KanBan tabs",
+      "Added error monitoring"
+    ],
+    "created_at": "2026-02-17T03:33:35.480Z",
+    "updated_at": "2026-02-17T03:33:35.480Z"
+  },
+  {
+    "id": "827751bf-2ec1-4263-b108-f78c8c3033a1",
+    "name": "Logic 🧠",
+    "role": "Backend Developer",
+    "status": "idle",
+    "last_activity": "API endpoints live",
+    "recent_work": [
+      "Built cron endpoint",
+      "Implemented data persistence",
+      "Fixed CORS headers"
+    ],
+    "created_at": "2026-02-17T03:33:36.086Z",
+    "updated_at": "2026-02-17T03:33:36.086Z"
+  }
+]

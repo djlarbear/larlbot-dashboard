@@ -1,0 +1,29 @@
+{
+  "Denver Pioneers": [
+    {
+      "player": "Star Scorer (Out)",
+      "status": "out",
+      "impact_level": "star",
+      "timestamp": "2026-02-15T11:02:12.247370",
+      "impact_points": 8
+    }
+  ],
+  "Illinois Fighting Illini": [
+    {
+      "player": "Backup Center",
+      "status": "day_to_day",
+      "impact_level": "bench",
+      "timestamp": "2026-02-15T11:02:12.247546",
+      "impact_points": 0.25
+    }
+  ],
+  "Dayton Flyers": [
+    {
+      "player": "Key Guard (Questionable)",
+      "status": "questionable",
+      "impact_level": "key",
+      "timestamp": "2026-02-15T11:02:12.247814",
+      "impact_points": 1
+    }
+  ]
+}

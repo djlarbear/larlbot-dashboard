@@ -1,0 +1,819 @@
+{
+ "last_updated": "2026-02-19T03:39:26.231892",
+ "meta": {
+  "source": "espn_record_endpoint",
+  "fetched": 30
+ },
+ "teams": {
+  "Atlanta Hawks": {
+   "ppg": 117.30357,
+   "opp_ppg": 118.625,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    107.0,
+    116.0,
+    119.0,
+    121.0,
+    127.0
+   ],
+   "recent_margin": [
+    -3.0,
+    -22.0,
+    -7.0,
+    2.0,
+    12.0
+   ],
+   "mov": -1.2999999999999972,
+   "wins": 26,
+   "losses": 30
+  },
+  "Boston Celtics": {
+   "ppg": 115.25926,
+   "opp_ppg": 108.35185,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    124.0,
+    89.0,
+    98.0,
+    114.0,
+    110.0
+   ],
+   "recent_margin": [
+    19.0,
+    -22.0,
+    2.0,
+    21.0,
+    10.0
+   ],
+   "mov": 6.8999999999999915,
+   "wins": 35,
+   "losses": 19
+  },
+  "Brooklyn Nets": {
+   "ppg": 107.66038,
+   "opp_ppg": 114.92453,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    110.0,
+    123.0,
+    127.0,
+    98.0,
+    109.0
+   ],
+   "recent_margin": [
+    -5.0,
+    8.0,
+    14.0,
+    -20.0,
+    -16.0
+   ],
+   "mov": -7.200000000000003,
+   "wins": 15,
+   "losses": 38
+  },
+  "Charlotte Hornets": {
+   "ppg": 115.69091,
+   "opp_ppg": 113.8,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    110.0,
+    104.0,
+    126.0,
+    109.0,
+    102.0
+   ],
+   "recent_margin": [
+    3.0,
+    -6.0,
+    7.0,
+    10.0,
+    7.0
+   ],
+   "mov": 1.9000000000000057,
+   "wins": 26,
+   "losses": 29
+  },
+  "Chicago Bulls": {
+   "ppg": 116.781815,
+   "opp_ppg": 120.61818,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    105.0,
+    115.0,
+    120.0,
+    107.0,
+    115.0
+   ],
+   "recent_margin": [
+    -19.0,
+    -8.0,
+    -16.0,
+    -16.0,
+    -16.0
+   ],
+   "mov": -3.799999999999997,
+   "wins": 24,
+   "losses": 31
+  },
+  "Cleveland Cavaliers": {
+   "ppg": 119.96364,
+   "opp_ppg": 115.90909,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    138.0,
+    119.0,
+    132.0,
+    124.0,
+    130.0
+   ],
+   "recent_margin": [
+    25.0,
+    2.0,
+    6.0,
+    33.0,
+    19.0
+   ],
+   "mov": 4.099999999999994,
+   "wins": 34,
+   "losses": 21
+  },
+  "Dallas Mavericks": {
+   "ppg": 113.94444,
+   "opp_ppg": 117.40741,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    104.0,
+    111.0,
+    125.0,
+    123.0,
+    100.0
+   ],
+   "recent_margin": [
+    -20.0,
+    -9.0,
+    -13.0,
+    -12.0,
+    -10.0
+   ],
+   "mov": -3.5,
+   "wins": 19,
+   "losses": 35
+  },
+  "Denver Nuggets": {
+   "ppg": 120.36364,
+   "opp_ppg": 116.32727,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    122.0,
+    117.0,
+    136.0,
+    127.0,
+    121.0
+   ],
+   "recent_margin": [
+    6.0,
+    -2.0,
+    16.0,
+    -7.0,
+    -3.0
+   ],
+   "mov": 4.1000000000000085,
+   "wins": 35,
+   "losses": 20
+  },
+  "Detroit Pistons": {
+   "ppg": 117.245285,
+   "opp_ppg": 109.28302,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    113.0,
+    110.0,
+    118.0,
+    117.0,
+    124.0
+   ],
+   "recent_margin": [
+    18.0,
+    6.0,
+    38.0,
+    -9.0,
+    3.0
+   ],
+   "mov": 7.900000000000006,
+   "wins": 40,
+   "losses": 13
+  },
+  "Golden State Warriors": {
+   "ppg": 115.527275,
+   "opp_ppg": 113.69091,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    113.0,
+    114.0,
+    99.0,
+    101.0,
+    94.0
+   ],
+   "recent_margin": [
+    -13.0,
+    1.0,
+    -6.0,
+    4.0,
+    -19.0
+   ],
+   "mov": 1.7999999999999972,
+   "wins": 29,
+   "losses": 26
+  },
+  "Houston Rockets": {
+   "ppg": 114.64151,
+   "opp_ppg": 109.62264,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    102.0,
+    102.0,
+    112.0,
+    99.0,
+    93.0
+   ],
+   "recent_margin": [
+    -3.0,
+    7.0,
+    6.0,
+    -10.0,
+    -21.0
+   ],
+   "mov": 5.0,
+   "wins": 33,
+   "losses": 20
+  },
+  "Indiana Pacers": {
+   "ppg": 111.145454,
+   "opp_ppg": 118.6,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    115.0,
+    137.0,
+    104.0,
+    99.0,
+    122.0
+   ],
+   "recent_margin": [
+    5.0,
+    3.0,
+    -18.0,
+    -6.0,
+    -9.0
+   ],
+   "mov": -7.5,
+   "wins": 15,
+   "losses": 40
+  },
+  "LA Clippers": {
+   "ppg": 111.90741,
+   "opp_ppg": 112.333336,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    105.0,
+    95.0,
+    115.0,
+    114.0,
+    91.0
+   ],
+   "recent_margin": [
+    3.0,
+    -7.0,
+    19.0,
+    3.0,
+    -33.0
+   ],
+   "mov": -0.3999999999999915,
+   "wins": 26,
+   "losses": 28
+  },
+  "Los Angeles Lakers": {
+   "ppg": 116.01852,
+   "opp_ppg": 116.01852,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    124.0,
+    108.0,
+    110.0,
+    105.0,
+    119.0
+   ],
+   "recent_margin": [
+    20.0,
+    -28.0,
+    -9.0,
+    6.0,
+    4.0
+   ],
+   "mov": 0.0,
+   "wins": 33,
+   "losses": 21
+  },
+  "Memphis Grizzlies": {
+   "ppg": 115.26415,
+   "opp_ppg": 117.471695,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    116.0,
+    113.0,
+    115.0,
+    115.0,
+    129.0
+   ],
+   "recent_margin": [
+    -6.0,
+    -1.0,
+    -7.0,
+    -20.0,
+    4.0
+   ],
+   "mov": -2.200000000000003,
+   "wins": 20,
+   "losses": 33
+  },
+  "Miami Heat": {
+   "ppg": 119.58929,
+   "opp_ppg": 117.17857,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    123.0,
+    111.0,
+    132.0,
+    96.0,
+    115.0
+   ],
+   "recent_margin": [
+    12.0,
+    -4.0,
+    31.0,
+    -2.0,
+    -12.0
+   ],
+   "mov": 2.3999999999999915,
+   "wins": 29,
+   "losses": 27
+  },
+  "Milwaukee Bucks": {
+   "ppg": 111.79245,
+   "opp_ppg": 115.18868,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    110.0,
+    116.0,
+    99.0,
+    105.0,
+    141.0
+   ],
+   "recent_margin": [
+    17.0,
+    8.0,
+    -19.0,
+    6.0,
+    4.0
+   ],
+   "mov": -3.4000000000000057,
+   "wins": 23,
+   "losses": 30
+  },
+  "Minnesota Timberwolves": {
+   "ppg": 119.67857,
+   "opp_ppg": 114.75,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    133.0,
+    138.0,
+    96.0,
+    115.0,
+    128.0
+   ],
+   "recent_margin": [
+    24.0,
+    22.0,
+    -19.0,
+    -4.0,
+    2.0
+   ],
+   "mov": 4.900000000000006,
+   "wins": 34,
+   "losses": 22
+  },
+  "New Orleans Pelicans": {
+   "ppg": 114.58929,
+   "opp_ppg": 120.41071,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    111.0,
+    120.0,
+    119.0,
+    137.0,
+    95.0
+   ],
+   "recent_margin": [
+    -12.0,
+    26.0,
+    4.0,
+    -4.0,
+    -7.0
+   ],
+   "mov": -5.800000000000011,
+   "wins": 15,
+   "losses": 41
+  },
+  "New York Knicks": {
+   "ppg": 118.01818,
+   "opp_ppg": 111.854546,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    138.0,
+    134.0,
+    111.0,
+    80.0,
+    134.0
+   ],
+   "recent_margin": [
+    49.0,
+    -3.0,
+    22.0,
+    -38.0,
+    7.0
+   ],
+   "mov": 6.099999999999994,
+   "wins": 35,
+   "losses": 20
+  },
+  "Oklahoma City Thunder": {
+   "ppg": 119.69643,
+   "opp_ppg": 108.03571,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    93.0,
+    136.0,
+    119.0,
+    106.0,
+    106.0
+   ],
+   "recent_margin": [
+    -17.0,
+    27.0,
+    9.0,
+    -6.0,
+    -10.0
+   ],
+   "mov": 11.700000000000003,
+   "wins": 42,
+   "losses": 14
+  },
+  "Orlando Magic": {
+   "ppg": 115.0566,
+   "opp_ppg": 115.245285,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    108.0,
+    118.0,
+    120.0,
+    118.0,
+    92.0
+   ],
+   "recent_margin": [
+    -8.0,
+    19.0,
+    3.0,
+    20.0,
+    -36.0
+   ],
+   "mov": -0.10000000000000853,
+   "wins": 28,
+   "losses": 25
+  },
+  "Philadelphia 76ers": {
+   "ppg": 116.166664,
+   "opp_ppg": 115.90741,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    89.0,
+    118.0,
+    109.0,
+    115.0,
+    113.0
+   ],
+   "recent_margin": [
+    -49.0,
+    -17.0,
+    6.0,
+    -4.0,
+    19.0
+   ],
+   "mov": 0.29999999999999716,
+   "wins": 30,
+   "losses": 24
+  },
+  "Phoenix Suns": {
+   "ppg": 113.61818,
+   "opp_ppg": 111.836365,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    109.0,
+    120.0,
+    103.0,
+    97.0,
+    130.0
+   ],
+   "recent_margin": [
+    -27.0,
+    9.0,
+    -6.0,
+    -4.0,
+    5.0
+   ],
+   "mov": 1.7999999999999972,
+   "wins": 32,
+   "losses": 23
+  },
+  "Portland Trail Blazers": {
+   "ppg": 116.32143,
+   "opp_ppg": 118.28571,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    135.0,
+    109.0,
+    135.0,
+    122.0,
+    135.0
+   ],
+   "recent_margin": [
+    16.0,
+    -24.0,
+    17.0,
+    7.0,
+    20.0
+   ],
+   "mov": -2.0,
+   "wins": 27,
+   "losses": 29
+  },
+  "Sacramento Kings": {
+   "ppg": 110.14286,
+   "opp_ppg": 120.625,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    93.0,
+    94.0,
+    126.0,
+    111.0,
+    125.0
+   ],
+   "recent_margin": [
+    -28.0,
+    -26.0,
+    -6.0,
+    -3.0,
+    -4.0
+   ],
+   "mov": -10.5,
+   "wins": 12,
+   "losses": 44
+  },
+  "San Antonio Spurs": {
+   "ppg": 118.12963,
+   "opp_ppg": 112.166664,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    126.0,
+    136.0,
+    138.0,
+    135.0,
+    116.0
+   ],
+   "recent_margin": [
+    13.0,
+    28.0,
+    13.0,
+    12.0,
+    10.0
+   ],
+   "mov": 5.8999999999999915,
+   "wins": 38,
+   "losses": 16
+  },
+  "Toronto Raptors": {
+   "ppg": 113.781815,
+   "opp_ppg": 112.25455,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    95.0,
+    122.0,
+    123.0,
+    126.0,
+    107.0
+   ],
+   "recent_margin": [
+    -18.0,
+    18.0,
+    16.0,
+    -2.0,
+    7.0
+   ],
+   "mov": 1.5,
+   "wins": 32,
+   "losses": 23
+  },
+  "Utah Jazz": {
+   "ppg": 118.25,
+   "opp_ppg": 125.92857,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    119.0,
+    121.0,
+    115.0,
+    117.0,
+    119.0
+   ],
+   "recent_margin": [
+    -16.0,
+    28.0,
+    4.0,
+    -3.0,
+    -2.0
+   ],
+   "mov": -7.6000000000000085,
+   "wins": 18,
+   "losses": 38
+  },
+  "Washington Wizards": {
+   "ppg": 112.15094,
+   "opp_ppg": 123.13207,
+   "poss": null,
+   "fga": null,
+   "home_ppg": null,
+   "away_ppg": null,
+   "home_opp_ppg": null,
+   "away_opp_ppg": null,
+   "recent_ppg": [
+    113.0,
+    101.0,
+    113.0,
+    126.0,
+    101.0
+   ],
+   "recent_margin": [
+    -25.0,
+    -31.0,
+    -14.0,
+    9.0,
+    -31.0
+   ],
+   "mov": -10.899999999999991,
+   "wins": 14,
+   "losses": 39
+  }
+ }
+}

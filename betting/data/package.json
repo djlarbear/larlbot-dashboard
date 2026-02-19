@@ -1,0 +1,16 @@
+{
+  "name": "mission-control",
+  "version": "1.0.0",
+  "description": "Mission Control - Local Command Center (no GitHub)",
+  "main": "mission-control-server.js",
+  "scripts": {
+    "start": "node mission-control-server.js",
+    "backend": "node mission-control-backend.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "uuid": "^9.0.1"
+  },
+  "private": true
+}

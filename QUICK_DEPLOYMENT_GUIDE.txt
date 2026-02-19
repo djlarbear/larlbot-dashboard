@@ -1,0 +1,136 @@
+================================================================================
+🎰 QUICK DEPLOYMENT GUIDE - Dashboard Redesign
+================================================================================
+
+STATUS: ✅ LOCAL READY | ⏳ RAILWAY PENDING
+
+================================================================================
+WHAT'S NEW
+================================================================================
+
+1. 🎰 Header: "🎰 LarlBot Dashboard 🎰" (centered, emoji bookends)
+2. 📊 Layout: 2-column grid for bets side-by-side
+3. ⭐ Content: Only shows top 10 recommendations (rest tracked internally)
+4. 🎨 Design: Uniform spacing, colors, typography throughout
+
+================================================================================
+LOCAL TEST
+================================================================================
+
+✅ Already Running:
+  - Dashboard at http://localhost:5001
+  - Port 5001 active
+  - All updates applied
+
+To Verify Locally:
+  1. Open: http://localhost:5001
+  2. Should see: Centered header with 🎰 emoji on both sides
+  3. Should see: 2 bets side-by-side in grid
+  4. Should see: Only top 10 bets displayed
+  5. Should see: Uniform spacing & colors throughout
+
+================================================================================
+DEPLOY TO RAILWAY
+================================================================================
+
+One-Time Setup (if needed):
+  cd /Users/macmini/.openclaw/workspace
+  git config --global user.email "your@email.com"
+  git config --global user.name "Your Name"
+
+Deploy Now:
+  cd /Users/macmini/.openclaw/workspace
+  git add .
+  git commit -m "Redesign: Center header with emojis, 2-col layout, top 10 only"
+  git push
+
+Railway auto-deploys on git push.
+Check: https://web-production-a39703.up.railway.app/
+
+================================================================================
+FILES CHANGED
+================================================================================
+
+✅ templates/index.html
+   - Centered header
+   - 2-column grid
+   - Emoji bookends
+   - Uniform spacing
+
+✅ static/script.js
+   - Only render top 10
+   - Rest kept internally
+   - Updated console logs
+
+✅ dashboard_server_cache_fixed.py
+   - Running on port 5001
+   - Cache headers active
+
+================================================================================
+IF SOMETHING LOOKS OFF
+================================================================================
+
+Local Fix:
+  pkill -f dashboard
+  sleep 2
+  python3 dashboard_server_cache_fixed.py &
+  # Then refresh: Cmd+Shift+R (Mac) or Ctrl+F5 (Windows)
+
+Railway Fix:
+  git push
+  Wait 2-3 minutes for auto-deploy
+  Clear cache: Cmd+Shift+Delete
+  Hard refresh: Cmd+Shift+R
+
+================================================================================
+VERIFICATION CHECKLIST
+================================================================================
+
+Header:
+  ☐ Centered on screen
+  ☐ Emojis on both sides (🎰)
+  ☐ Shows "LarlBot Dashboard"
+  ☐ Timestamp below
+
+Layout:
+  ☐ 2 bets side-by-side
+  ☐ Uniform spacing (1.5rem gaps)
+  ☐ Responsive on mobile (1 column)
+
+Content:
+  ☐ Shows "Top 10 Recommendations"
+  ☐ Only 10 bets displayed
+  ☐ Rest hidden (tracked internally)
+
+Design:
+  ☐ Consistent colors (purple/green/blue)
+  ☐ Uniform border-radius (12px)
+  ☐ Glass-morphism effects
+  ☐ Consistent typography
+
+Data:
+  ☐ Stats updating (Win Rate, Record, Total)
+  ☐ Tabs switching properly
+  ☐ Purdue showing "-1.5" (not "+1.5")
+  ☐ All 78 bets tracked internally
+
+================================================================================
+SUPPORT
+================================================================================
+
+For issues, check:
+  - DASHBOARD_REDESIGN_COMPLETE.txt (full details)
+  - FINAL_DEPLOYMENT_GUIDE.md (technical)
+  - Dashboard logs: tail -50 /tmp/dashboard.log
+
+Current Status:
+  Local: ✅ Production ready
+  Railway: Deploy with "git push"
+  Cache: Busting headers active
+  Data: All 78 bets tracked, top 10 displayed
+
+================================================================================
+
+🎰 Dashboard is production-ready! Deploy with: git push
+
+================================================================================

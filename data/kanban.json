@@ -1,0 +1,182 @@
+[
+  {
+    "id": "7aa579aa-af8d-49e1-a8da-d8d0e32e53d9",
+    "title": "Mission Control UI Rebuild",
+    "description": "Complete rewrite of Mission Control with working APIs and Agents tab",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:33:36.699Z",
+    "updated_at": "2026-02-17T03:33:36.699Z"
+  },
+  {
+    "id": "a8606cc3-049c-4e03-8965-8a6fc121f8d7",
+    "title": "Implement Real-Time Data Loading",
+    "description": "Get cron jobs, dashboard metrics, KanBan items, and agent status in real-time",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:33:37.309Z",
+    "updated_at": "2026-02-17T03:33:37.309Z"
+  },
+  {
+    "id": "2f46cbc1-fd4c-4db6-a406-7ce59ce37c98",
+    "title": "Add Agents Dashboard Tab",
+    "description": "Show status, recent work, and activity for all agents",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:33:37.924Z",
+    "updated_at": "2026-02-17T03:33:37.924Z"
+  },
+  {
+    "id": "f499ff50-6391-444b-a02f-dd328263f653",
+    "title": "Deploy Mission Control v5",
+    "description": "Get Mission Control live with backend + frontend running autonomously",
+    "status": "done",
+    "priority": "critical",
+    "created_at": "2026-02-17T03:33:38.530Z",
+    "updated_at": "2026-02-17T03:33:38.530Z"
+  },
+  {
+    "id": "597f8169-4e93-44ad-b412-740960ab2699",
+    "title": "Integrate Betting Data Dashboard",
+    "description": "Show live win rate, profit/loss, active bets, and daily pick status",
+    "status": "ready",
+    "priority": "high",
+    "created_at": "2026-02-17T03:33:39.149Z",
+    "updated_at": "2026-02-17T03:33:39.149Z"
+  },
+  {
+    "id": "7fdceef6-37e9-467d-bac7-e19808d1c946",
+    "title": "Add WebSocket Real-Time Updates",
+    "description": "Eliminate polling - push updates directly to browser when status changes",
+    "status": "ideas",
+    "priority": "medium",
+    "created_at": "2026-02-17T03:33:39.760Z",
+    "updated_at": "2026-02-17T03:33:39.760Z"
+  },
+  {
+    "id": "5f49dd7b-8785-4551-af64-a0498aa595fe",
+    "title": "Deploy Mission Control v6",
+    "description": "Complete rewrite with Apple Tahoe glass design, 5 tabs, full interactivity",
+    "status": "ready",
+    "priority": "critical",
+    "created_at": "2026-02-17T03:53:57.042Z",
+    "updated_at": "2026-02-17T03:53:57.042Z"
+  },
+  {
+    "id": "2431ae0f-2af9-450c-b583-42da45b72e18",
+    "title": "Fix Cron Jobs Display",
+    "description": "Group jobs by agent (SWORD, Pixel, Logic, System), fix case-sensitivity bug",
+    "status": "ready",
+    "priority": "high",
+    "created_at": "2026-02-17T03:53:57.055Z",
+    "updated_at": "2026-02-17T03:53:57.055Z"
+  },
+  {
+    "id": "1d41df8f-d90c-4811-b12a-a822ef83940f",
+    "title": "Sync Ideas to KanBan",
+    "description": "Ideas created in Ideas tab auto-populate in KanBan Idea column, full sync with localStorage",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-02-17T03:53:57.065Z",
+    "updated_at": "2026-02-17T03:53:57.065Z"
+  },
+  {
+    "id": "f0d5f21c-4582-4f85-82cd-a55cca76088d",
+    "title": "Polish KanBan UI",
+    "description": "Make cards expandable, editable, deletable, draggable. Clean button design.",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-02-17T03:53:57.073Z",
+    "updated_at": "2026-02-17T03:53:57.073Z"
+  },
+  {
+    "id": "49e589a3-f730-4509-b2d7-4e509654b5b6",
+    "title": "Rebuild Mission Control v5 Frontend",
+    "description": "Fixed syntax errors, added all 5 tabs, implemented basic data loading",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:53:57.079Z",
+    "updated_at": "2026-02-17T03:53:57.079Z"
+  },
+  {
+    "id": "a269443e-88e5-4652-8c90-253f46e645c0",
+    "title": "Create Uniform Card Design System",
+    "description": "Applied consistent glass-morphism, borders, hover effects across all tabs",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:53:57.089Z",
+    "updated_at": "2026-02-17T03:53:57.089Z"
+  },
+  {
+    "id": "0273b8df-6604-41d4-8e62-f7dca8c0b6c9",
+    "title": "Deploy Mission Control v6",
+    "description": "Complete rewrite with Apple Tahoe glass design, 5 tabs, full interactivity",
+    "status": "ready",
+    "priority": "critical",
+    "created_at": "2026-02-17T03:54:01.822Z",
+    "updated_at": "2026-02-17T03:54:01.822Z"
+  },
+  {
+    "id": "8e5d4a12-5dc6-41e0-a505-ad6978713f1e",
+    "title": "Fix Cron Jobs Display",
+    "description": "Group jobs by agent, fix case-sensitivity bug, show all 17 jobs",
+    "status": "ready",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.823Z",
+    "updated_at": "2026-02-17T03:54:01.823Z"
+  },
+  {
+    "id": "026e63dc-9409-4408-b903-8275bf2e0ac1",
+    "title": "Sync Ideas to KanBan",
+    "description": "Ideas created in Ideas tab auto-populate in KanBan Idea column with full localStorage sync",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.824Z",
+    "updated_at": "2026-02-17T03:54:01.824Z"
+  },
+  {
+    "id": "030e2309-f207-4fa1-8398-25f0b79f578c",
+    "title": "Polish KanBan UI",
+    "description": "Make cards expandable, editable, deletable, draggable with clean button design",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.824Z",
+    "updated_at": "2026-02-17T03:54:01.824Z"
+  },
+  {
+    "id": "f857070d-2fdf-4b72-82d7-abcf6bc07318",
+    "title": "Rebuild Mission Control v5 Frontend",
+    "description": "Fixed syntax errors, added all 5 tabs, implemented basic data loading",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.825Z",
+    "updated_at": "2026-02-17T03:54:01.825Z"
+  },
+  {
+    "id": "2e3951a0-f59c-4a08-b27b-fbd0510dc421",
+    "title": "Create Uniform Card Design System",
+    "description": "Applied consistent glass-morphism, borders, hover effects across all tabs",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.825Z",
+    "updated_at": "2026-02-17T03:54:01.825Z"
+  },
+  {
+    "id": "b0a62b06-a2af-45bd-b559-80672ea01e92",
+    "title": "Store Larry Mission Control Vision",
+    "description": "Documented exact requirements: Tab order, design, features, data persistence",
+    "status": "done",
+    "priority": "critical",
+    "created_at": "2026-02-17T03:54:01.826Z",
+    "updated_at": "2026-02-17T03:54:01.826Z"
+  },
+  {
+    "id": "e5e1dbdc-4c1e-4649-a3b4-0f39ff8aba24",
+    "title": "Setup 4 Specialist Agents",
+    "description": "Created Jarvis CEO, Sword Betting, Pixel Frontend, Logic Backend with SOUL and IDENTITY files",
+    "status": "done",
+    "priority": "high",
+    "created_at": "2026-02-17T03:54:01.826Z",
+    "updated_at": "2026-02-17T03:54:01.826Z"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-02-15 11:47 EST",
+  "bets_to_check": [
+    {
+      "game": "UTSA Roadrunners @ Charlotte 49ers",
+      "type": "TOTAL",
+      "recommendation": "UNDER 147.5",
+      "line": "Over 147.5 (-110) / Under 147.5 (-110)",
+      "confidence": 82
+    },
+    {
+      "game": "Maryland Terrapins @ Rutgers Scarlet Knights",
+      "type": "TOTAL",
+      "recommendation": "UNDER 144.5",
+      "line": "Over 144.5 (-110) / Under 144.5 (-110)",
+      "confidence": 82
+    },
+    {
+      "game": "Utah Utes @ Cincinnati Bearcats",
+      "type": "TOTAL",
+      "recommendation": "UNDER 142.5",
+      "line": "Over 142.5 (-110) / Under 142.5 (-110)",
+      "confidence": 82
+    },
+    {
+      "game": "Manhattan Jaspers @ Canisius Golden Griffins",
+      "type": "TOTAL",
+      "recommendation": "UNDER 140.5",
+      "line": "Over 140.5 (-110) / Under 140.5 (-110)",
+      "confidence": 82
+    },
+    {
+      "game": "Denver Pioneers @ Omaha Mavericks",
+      "type": "TOTAL",
+      "recommendation": "UNDER 159.5",
+      "line": "Over 159.5 (-114) / Under 159.5 (-106)",
+      "confidence": 82
+    }
+  ]
+}

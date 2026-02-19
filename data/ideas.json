@@ -1,0 +1,20 @@
+[
+  {
+    "id": "842fdfc3-5bf4-4336-b6f5-18d64f1c930b",
+    "title": "Voice Commands for Mission Control",
+    "description": "Add voice interface to trigger cron jobs, update ideas, and query agent status",
+    "created_at": "2026-02-17T03:33:40.372Z"
+  },
+  {
+    "id": "0abc3ac5-e5db-44f6-97e2-0a27af1dea79",
+    "title": "Slack Integration",
+    "description": "Sync ideas and work items directly to Slack for team visibility",
+    "created_at": "2026-02-17T03:33:40.979Z"
+  },
+  {
+    "id": "dc8e0fbe-4467-4cce-8154-36310c475b64",
+    "title": "Historical Analytics Dashboard",
+    "description": "Track win rate trends, ROI by bet type, and agent productivity over time",
+    "created_at": "2026-02-17T03:33:41.589Z"
+  }
+]

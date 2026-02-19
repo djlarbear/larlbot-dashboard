@@ -1,0 +1,20 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "dockerfile",
+    "dockerfile": "./Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "bash /app/entrypoint.sh",
+    "restartPolicyMaxRetries": 5,
+    "restartPolicyType": "on_failure",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 30
+  },
+  "environment": {
+    "WORKSPACE": "/app",
+    "PORT": "8000",
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

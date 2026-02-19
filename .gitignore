@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+betting_env/
+venv/
+ENV/
+*.pkl
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Database
+*.db-journal
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp
+*.tmp
+*.temp
+.cache/
+
+# OpenClaw
+.openclaw/
+.pi/
+
+# Rodent images (optional - uncomment to ignore)
+# rodent_images/

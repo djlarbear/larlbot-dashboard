@@ -1,0 +1,44 @@
+[
+  {
+    "game": "Pittsburgh Panthers @ North Carolina Tar Heels",
+    "sport": "NCAA Basketball",
+    "bet_type": "SPREAD",
+    "recommendation": "North Carolina Tar Heels -10.5",
+    "confidence": 85,
+    "edge": 18.8,
+    "reason": "North Carolina Tar Heels stronger than market thinks",
+    "home_record": "3-1",
+    "away_record": "0-3",
+    "market_line": "North -10.5",
+    "fanduel_line": "North -10.5 (-110)",
+    "game_time": "2:00 PM EST"
+  },
+  {
+    "game": "Kansas Jayhawks @ Iowa State Cyclones",
+    "sport": "NCAA Basketball",
+    "bet_type": "SPREAD",
+    "recommendation": "Iowa State Cyclones -7.5",
+    "confidence": 85,
+    "edge": 8.2,
+    "reason": "Iowa State Cyclones stronger than market thinks",
+    "home_record": "3-1",
+    "away_record": "3-1",
+    "market_line": "Iowa -7.5",
+    "fanduel_line": "Iowa -7.5 (-110)",
+    "game_time": "1:00 PM EST"
+  },
+  {
+    "game": "UCLA Bruins @ Michigan Wolverines",
+    "sport": "NCAA Basketball",
+    "bet_type": "SPREAD",
+    "recommendation": "Michigan Wolverines -16.5",
+    "confidence": 85,
+    "edge": 43.5,
+    "reason": "Michigan Wolverines stronger than market thinks",
+    "home_record": "4-0",
+    "away_record": "0-1",
+    "market_line": "Michigan -16.5",
+    "fanduel_line": "Michigan -16.5 (-110)",
+    "game_time": "4:00 PM EST"
+  }
+]

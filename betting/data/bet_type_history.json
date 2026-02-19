@@ -1,0 +1,62 @@
+{
+  "2026-02-16": {
+    "timestamp": "2026-02-17T10:09:25.154243",
+    "performance": {
+      "SPREAD": {
+        "total": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": "71.4%",
+        "win_rate_decimal": 0.7142857142857143,
+        "avg_edge": "2.80",
+        "avg_confidence": "74.1%",
+        "roi": "2.00"
+      },
+      "MONEYLINE": {
+        "total": 5,
+        "wins": 1,
+        "losses": 4,
+        "win_rate": "20.0%",
+        "win_rate_decimal": 0.2,
+        "avg_edge": "0.50",
+        "avg_confidence": "60.0%",
+        "roi": "0.10"
+      },
+      "TOTAL": {
+        "total": 5,
+        "wins": 0,
+        "losses": 5,
+        "win_rate": "0.0%",
+        "win_rate_decimal": 0.0,
+        "avg_edge": "20.90",
+        "avg_confidence": "59.2%",
+        "roi": "0.00"
+      }
+    }
+  },
+  "2026-02-15": {
+    "timestamp": "2026-02-17T10:09:29.107946",
+    "performance": {
+      "SPREAD": {
+        "total": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": "80.0%",
+        "win_rate_decimal": 0.8,
+        "avg_edge": "4.42",
+        "avg_confidence": "91.2%",
+        "roi": "3.54"
+      },
+      "TOTAL": {
+        "total": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": "80.0%",
+        "win_rate_decimal": 0.8,
+        "avg_edge": "21.24",
+        "avg_confidence": "82.0%",
+        "roi": "16.99"
+      }
+    }
+  }
+}

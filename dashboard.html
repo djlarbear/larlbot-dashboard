@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LarlBot 🎰 | Sports Betting Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            background-attachment: fixed;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        body {
+            padding: 1.5rem 1rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            object-fit: cover;
+            filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.6));
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #a855f7 40%, #f59e0b 80%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(52, 199, 89, 0.2);
+            border: 1px solid rgba(52, 199, 89, 0.4);
+            color: #34c759;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* ===== NAV TABS ===== */
+        .nav-tabs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-button {
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .nav-button:hover {
+            background: rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.active {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.4) 0%, rgba(245, 158, 11, 0.3) 100%);
+            border: 2px solid rgba(168, 85, 247, 0.8);
+            box-shadow: 0 6px 30px rgba(168, 85, 247, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== KEY METRICS ===== */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(30px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .metric-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .metrics {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+
+            .metric-card {
+                padding: 1rem;
+            }
+
+            .metric-value {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* ===== DIVIDER ===== */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(168, 85, 247, 0.4) 50%, transparent 100%);
+            margin: 0.2rem 0;
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+        }
+
+        /* ===== RISK TIER SECTION ===== */
+        .risk-tier {
+            margin-bottom: 0.5rem;
+        }
+
+        .risk-tier-header {
+            background: linear-gradient(135deg, rgba(52, 199, 89, 0.15) 0%, rgba(52, 199, 89, 0.05) 100%);
+            border: 2px solid rgba(52, 199, 89, 0.5);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.3rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(52, 199, 89, 0.3);
+        }
+
+        .risk-tier-header.moderate {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .risk-tier-header.high {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%);
+            border-color: rgba(239, 68, 68, 0.5);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .risk-tier-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #34c759;
+            margin: 0;
+        }
+
+        .risk-tier-title.moderate {
+            color: #f59e0b;
+        }
+
+        .risk-tier-title.high {
+            color: #ef4444;
+        }
+
+        .risk-tier-subtitle {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0.3rem 0 0 0;
+        }
+
+        /* ===== BET CARDS GRID ===== */
+        .bet-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bet-card {
+            background: linear-gradient(135deg, rgba(52, 199, 89, 0.15) 0%, rgba(52, 199, 89, 0.05) 100%);
+            border: 2px solid rgba(52, 199, 89, 0.5);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 15px rgba(52, 199, 89, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bet-card.moderate {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .bet-card.high {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%);
+            border-color: rgba(239, 68, 68, 0.5);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .bet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.8rem;
+            gap: 0.5rem;
+        }
+
+        .bet-game {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+
+        .bet-time {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .bet-badge {
+            background: rgba(52, 199, 89, 0.3);
+            color: #34c759;
+            padding: 0.3rem 0.8rem;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .bet-badge.moderate {
+            background: rgba(245, 158, 11, 0.3);
+            color: #f59e0b;
+        }
+
+        .bet-badge.high {
+            background: rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .bet-box {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .bet-type {
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.6rem;
+        }
+
+        .bet-recommendation {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1.3;
+            word-wrap: break-word;
+        }
+
+        .bet-line {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.4rem;
+        }
+
+        .bet-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.6rem;
+        }
+
+        .bet-stat {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.6rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .bet-stat-label {
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+
+        .bet-stat-value {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .bet-reason {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+            margin-top: 0.8rem;
+            padding: 0.6rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .bet-cards {
+                grid-template-columns: 1fr;
+                gap: 0.6rem;
+            }
+
+            .bet-card {
+                padding: 0.8rem;
+            }
+
+            .bet-stats {
+                gap: 0.4rem;
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 3rem;
+        }
+
+        /* ===== HIDDEN SECTIONS ===== */
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HERO -->
+        <div class="hero">
+            <img src="larlbot_hero.png" alt="LarlBot" class="hero-logo">
+            <h1 class="hero-title">LarlBot</h1>
+            <p class="hero-subtitle">AI Sports Betting - Powered by Rats 🐭</p>
+            <div class="hero-badge">🟢 LIVE & DEPLOYED</div>
+        </div>
+
+        <!-- NAV -->
+        <div class="nav-tabs">
+            <button class="nav-button active" onclick="showSection('bets')">🎯 Today's Bets</button>
+            <button class="nav-button" onclick="showSection('results')">📊 Previous Results</button>
+            <button class="nav-button" onclick="showSection('bfr')">🐭 BFR Of The Day</button>
+        </div>
+
+        <!-- BETS SECTION -->
+        <div id="bets" class="section active">
+            <!-- METRICS -->
+            <div class="metrics">
+                <div class="metric-card">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-label">Win Rate</div>
+                    <div class="metric-value" id="winrate">75%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-label">Record</div>
+                    <div class="metric-value" id="record">3-1</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-label">Live Odds</div>
+                    <div class="metric-value">FanDuel</div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- LOW RISK -->
+            <div class="risk-tier" id="low-tier">
+                <div class="risk-tier-header">
+                    <h2 class="risk-tier-title">🟢 LOW RISK PICKS - Conservative Plays</h2>
+                    <p class="risk-tier-subtitle">High confidence | Smaller edges | Steady profit</p>
+                </div>
+                <div class="bet-cards" id="low-cards"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- MODERATE RISK -->
+            <div class="risk-tier" id="moderate-tier">
+                <div class="risk-tier-header moderate">
+                    <h2 class="risk-tier-title moderate">🟡 MODERATE RISK PICKS - Balanced Approach</h2>
+                    <p class="risk-tier-subtitle">Good confidence | Medium edges | Optimal growth</p>
+                </div>
+                <div class="bet-cards moderate" id="moderate-cards"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- HIGH RISK -->
+            <div class="risk-tier" id="high-tier">
+                <div class="risk-tier-header high">
+                    <h2 class="risk-tier-title high">🔴 HIGH RISK PICKS - Maximum Upside</h2>
+                    <p class="risk-tier-subtitle">Lower confidence | Big edges | High variance plays</p>
+                </div>
+                <div class="bet-cards high" id="high-cards"></div>
+            </div>
+        </div>
+
+        <!-- RESULTS SECTION -->
+        <div id="results" class="section">
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.6);">Previous results coming soon...</p>
+        </div>
+
+        <!-- BFR SECTION -->
+        <div id="bfr" class="section">
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.6);">🐭 Big Fat Rodent Of The Day coming soon...</p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            We Love Big Fat Rodents 🐭<br>
+            Powered by LarlBot AI<br>
+            Last Updated: <span id="timestamp">Loading...</span>
+        </div>
+    </div>
+
+    <script>
+        // Sample data - will be replaced with dynamic loading
+        const todaysBets = [
+            {
+                game: 'Purdue Boilermakers @ Iowa Hawkeyes',
+                game_time: '5:00 PM EST',
+                bet_type: 'SPREAD',
+                recommendation: 'Purdue -1.5',
+                fanduel_line: 'Purdue -1.5 / Iowa +1.5 (-110)',
+                edge: '2.3',
+                confidence: '72',
+                risk_tier: 'LOW',
+                reason: 'Purdue strong road team, tight line. Quality matchup between evenly matched teams.'
+            },
+            {
+                game: 'Georgetown Hoyas @ UConn Huskies',
+                game_time: '8:00 PM EST',
+                bet_type: 'SPREAD',
+                recommendation: 'UConn -15.5',
+                fanduel_line: 'UConn -15.5 / Georgetown +15.5 (-110)',
+                edge: '2.8',
+                confidence: '76',
+                risk_tier: 'LOW',
+                reason: 'UConn dominant at home, Georgetown struggling. Solid favorite should cover.'
+            },
+            {
+                game: 'Texas Tech Red Raiders @ Arizona Wildcats',
+                game_time: '6:30 PM EST',
+                bet_type: 'SPREAD',
+                recommendation: 'Arizona -9.5',
+                fanduel_line: 'Arizona -9.5 / Texas Tech +9.5 (-110)',
+                edge: '4.2',
+                confidence: '65',
+                risk_tier: 'MODERATE',
+                reason: 'Arizona strong at home. Tech solid but Arizona should win by double digits.'
+            },
+            {
+                game: 'Auburn Tigers @ Arkansas Razorbacks',
+                game_time: '8:30 PM EST',
+                bet_type: 'SPREAD',
+                recommendation: 'Auburn +4.5',
+                fanduel_line: 'Arkansas -4.5 / Auburn +4.5 (-110)',
+                edge: '3.8',
+                confidence: '62',
+                risk_tier: 'MODERATE',
+                reason: 'Auburn quality team getting points. SEC road game, Auburn can keep it close or win.'
+            },
+            {
+                game: 'Colorado Buffaloes @ BYU Cougars',
+                game_time: '4:00 PM EST',
+                bet_type: 'SPREAD',
+                recommendation: 'BYU -8.5',
+                fanduel_line: 'BYU -8.5 / Colorado +8.5 (-110)',
+                edge: '4.5',
+                confidence: '63',
+                risk_tier: 'MODERATE',
+                reason: 'BYU strong home team. Colorado struggling on road. BYU should control and cover.'
+            }
+        ];
+
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-button').forEach(b => b.classList.remove('active'));
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function createBetCard(bet) {
+            const riskClass = bet.risk_tier.toLowerCase();
+            return `
+                <div class="bet-card ${riskClass}">
+                    <div class="bet-header">
+                        <div>
+                            <div class="bet-game">🏀 ${bet.game}</div>
+                            <div class="bet-time">⏰ ${bet.game_time}</div>
+                        </div>
+                        <div class="bet-badge ${riskClass}">${bet.risk_tier}</div>
+                    </div>
+                    <div class="bet-box">
+                        <div class="bet-type">${bet.bet_type} BET</div>
+                        <div class="bet-recommendation">${bet.recommendation}</div>
+                        <div class="bet-line">📊 FanDuel Line: ${bet.fanduel_line}</div>
+                    </div>
+                    <div class="bet-stats">
+                        <div class="bet-stat">
+                            <div class="bet-stat-label">Edge Type</div>
+                            <div class="bet-stat-value">${bet.edge}</div>
+                        </div>
+                        <div class="bet-stat">
+                            <div class="bet-stat-label">Confidence</div>
+                            <div class="bet-stat-value">${bet.confidence}%</div>
+                        </div>
+                        <div class="bet-stat">
+                            <div class="bet-stat-label">Book</div>
+                            <div class="bet-stat-value">FanDuel</div>
+                        </div>
+                    </div>
+                    <div class="bet-reason">💡 ${bet.reason}</div>
+                </div>
+            `;
+        }
+
+        function renderBets() {
+            const lowBets = todaysBets.filter(b => b.risk_tier === 'LOW');
+            const modBets = todaysBets.filter(b => b.risk_tier === 'MODERATE');
+            const highBets = todaysBets.filter(b => b.risk_tier === 'HIGH');
+
+            // Render or hide tiers based on availability
+            if (lowBets.length > 0) {
+                document.getElementById('low-cards').innerHTML = lowBets.map(createBetCard).join('');
+            } else {
+                document.getElementById('low-tier').style.display = 'none';
+            }
+
+            if (modBets.length > 0) {
+                document.getElementById('moderate-cards').innerHTML = modBets.map(createBetCard).join('');
+            } else {
+                document.getElementById('moderate-tier').style.display = 'none';
+            }
+
+            if (highBets.length > 0) {
+                document.getElementById('high-cards').innerHTML = highBets.map(createBetCard).join('');
+            } else {
+                document.getElementById('high-tier').style.display = 'none';
+            }
+
+            // Update timestamp
+            const now = new Date();
+            document.getElementById('timestamp').textContent = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZone: 'America/Detroit'
+            });
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', renderBets);
+    </script>
+</body>
+</html>

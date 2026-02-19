@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-02-17T11:40:05.338931",
+  "version": "4.0",
+  "formula": "Base \u00d7 EdgeBoost \u00d7 ConfBoost \u00d7 BetTypeSpecial",
+  "improvements": [
+    "High Edge (10+ pts) boosted 30% (80% historical win rate)",
+    "Low Edge (<5 pts) penalized 50% (45% historical win rate)",
+    "High Confidence (80%+) boosted 20%",
+    "Mid Confidence (75%+) boosted 10%",
+    "MONEYLINE disabled (0% historical win rate)",
+    "TOTAL with 75%+ confidence boosted 40% (80% win rate)"
+  ],
+  "scored_bets": [
+    {
+      "rank": 1,
+      "game": "Gardner-Webb Bulldogs @ Charleston Southern Buccaneers",
+      "type": "TOTAL",
+      "confidence": 61,
+      "edge": 23.9,
+      "score_v40": 19.0
+    },
+    {
+      "rank": 2,
+      "game": "Air Force Falcons @ New Mexico Lobos",
+      "type": "SPREAD",
+      "confidence": 82,
+      "edge": 11.0,
+      "score_v40": 17.9
+    },
+    {
+      "rank": 3,
+      "game": "Villanova Wildcats @ Xavier Musketeers",
+      "type": "TOTAL",
+      "confidence": 58,
+      "edge": 22.9,
+      "score_v40": 17.3
+    },
+    {
+      "rank": 4,
+      "game": "Boston College Eagles @ Florida St Seminoles",
+      "type": "TOTAL",
+      "confidence": 58,
+      "edge": 22.3,
+      "score_v40": 16.8
+    },
+    {
+      "rank": 5,
+      "game": "Northern Illinois Huskies @ Buffalo Bulls",
+      "type": "TOTAL",
+      "confidence": 58,
+      "edge": 22.1,
+      "score_v40": 16.7
+    },
+    {
+      "rank": 6,
+      "game": "Central Michigan Chippewas @ Eastern Michigan Eagles",
+      "type": "TOTAL",
+      "confidence": 58,
+      "edge": 21.5,
+      "score_v40": 16.2
+    },
+    {
+      "rank": 7,
+      "game": "South Carolina Gamecocks @ Florida Gators",
+      "type": "SPREAD",
+      "confidence": 82,
+      "edge": 9.0,
+      "score_v40": 11.3
+    },
+    {
+      "rank": 8,
+      "game": "Gardner-Webb Bulldogs @ Charleston Southern Buccaneers",
+      "type": "SPREAD",
+      "confidence": 82,
+      "edge": 7.0,
+      "score_v40": 8.8
+    },
+    {
+      "rank": 9,
+      "game": "Akron Zips @ Western Michigan Broncos",
+      "type": "SPREAD",
+      "confidence": 82,
+      "edge": 5.8,
+      "score_v40": 7.3
+    },
+    {
+      "rank": 10,
+      "game": "Boston College Eagles @ Florida St Seminoles",
+      "type": "SPREAD",
+      "confidence": 82,
+      "edge": 4.6,
+      "score_v40": 2.9
+    }
+  ]
+}

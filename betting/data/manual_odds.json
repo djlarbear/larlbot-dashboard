@@ -1,0 +1,8 @@
+{
+  "description": "Manual FanDuel odds override - Use when OddsAPI data is missing or stale",
+  "instructions": "Add entries here with game name and FanDuel spread. Format: 'Away Team @ Home Team': 'spread'",
+  "example": "Texas Tech Red Raiders @ Arizona Wildcats",
+  "overrides": {
+    "Texas Tech Red Raiders @ Arizona Wildcats": "-9.5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-02-17T19:55:37.458638",
+  "source": "learning_insights.json",
+  "weights": {
+    "SPREAD": {
+      "weight": 1.01,
+      "win_rate": 56.0,
+      "sample_count": 25,
+      "adjustment": 0.01,
+      "stability_factor": 1.0
+    },
+    "TOTAL": {
+      "weight": 1.29,
+      "win_rate": 70.0,
+      "sample_count": 10,
+      "adjustment": 0.29,
+      "stability_factor": 1.0
+    },
+    "MONEYLINE": {
+      "weight": 0.34,
+      "win_rate": 0.0,
+      "sample_count": 3,
+      "adjustment": -1.11,
+      "stability_factor": 0.6
+    }
+  },
+  "instructions": "Use these weights in bet_ranker.py when calculating LARLScore"
+}

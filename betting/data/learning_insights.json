@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-02-18T10:41:07.581733",
+  "total_bets_analyzed": 63,
+  "overall_win_rate": 47.6,
+  "by_sport": {
+    "NCAA Basketball": {
+      "wins": 30,
+      "losses": 33,
+      "total": 63,
+      "win_rate": 47.6,
+      "record": "30-33"
+    }
+  },
+  "by_bet_type": {
+    "SPREAD": {
+      "wins": 19,
+      "losses": 21,
+      "total": 40,
+      "win_rate": 47.5,
+      "record": "19-21"
+    },
+    "MONEYLINE": {
+      "wins": 1,
+      "losses": 7,
+      "total": 8,
+      "win_rate": 12.5,
+      "record": "1-7"
+    },
+    "TOTAL": {
+      "wins": 10,
+      "losses": 5,
+      "total": 15,
+      "win_rate": 66.7,
+      "record": "10-5"
+    }
+  },
+  "by_risk_tier": {
+    "LOW RISK": {
+      "wins": 19,
+      "losses": 23,
+      "total": 42,
+      "win_rate": 45.2,
+      "record": "19-23"
+    },
+    "HIGH RISK": {
+      "wins": 7,
+      "losses": 8,
+      "total": 15,
+      "win_rate": 46.7,
+      "record": "7-8"
+    },
+    "MODERATE RISK": {
+      "wins": 4,
+      "losses": 2,
+      "total": 6,
+      "win_rate": 66.7,
+      "record": "4-2"
+    }
+  },
+  "by_confidence": {
+    "90-100%": {
+      "wins": 4,
+      "losses": 6,
+      "total": 10,
+      "win_rate": 40.0,
+      "avg_confidence": 91.9,
+      "record": "4-6"
+    },
+    "80-89%": {
+      "wins": 10,
+      "losses": 11,
+      "total": 21,
+      "win_rate": 47.6,
+      "avg_confidence": 82.1,
+      "record": "10-11"
+    },
+    "70-79%": {
+      "wins": 9,
+      "losses": 7,
+      "total": 16,
+      "win_rate": 56.2,
+      "avg_confidence": 74.1,
+      "record": "9-7"
+    },
+    "60-69%": {
+      "wins": 3,
+      "losses": 6,
+      "total": 9,
+      "win_rate": 33.3,
+      "avg_confidence": 61.2,
+      "record": "3-6"
+    },
+    "50-59%": {
+      "wins": 4,
+      "losses": 3,
+      "total": 7,
+      "win_rate": 57.1,
+      "avg_confidence": 58,
+      "record": "4-3"
+    }
+  },
+  "by_edge": {
+    "10+ pts": {
+      "wins": 11,
+      "losses": 5,
+      "total": 16,
+      "win_rate": 68.8,
+      "avg_edge": 20.9,
+      "record": "11-5"
+    },
+    "5-9.9 pts": {
+      "wins": 4,
+      "losses": 3,
+      "total": 7,
+      "win_rate": 57.1,
+      "avg_edge": 6.4,
+      "record": "4-3"
+    },
+    "3-4.9 pts": {
+      "wins": 8,
+      "losses": 10,
+      "total": 18,
+      "win_rate": 44.4,
+      "avg_edge": 3.8,
+      "record": "8-10"
+    },
+    "1-2.9 pts": {
+      "wins": 6,
+      "losses": 8,
+      "total": 14,
+      "win_rate": 42.9,
+      "avg_edge": 1.9,
+      "record": "6-8"
+    },
+    "0-0.9 pts": {
+      "wins": 1,
+      "losses": 7,
+      "total": 8,
+      "win_rate": 12.5,
+      "avg_edge": 0.5,
+      "record": "1-7"
+    }
+  },
+  "recommendations": [
+    {
+      "type": "REDUCE",
+      "priority": "MEDIUM",
+      "action": "Reduce SPREAD bets (win rate: 47.5%)",
+      "reason": "Below 50% threshold with 40 bets"
+    },
+    {
+      "type": "REDUCE",
+      "priority": "MEDIUM",
+      "action": "Reduce MONEYLINE bets (win rate: 12.5%)",
+      "reason": "Below 50% threshold with 8 bets"
+    },
+    {
+      "type": "CALIBRATE",
+      "priority": "HIGH",
+      "action": "Lower confidence for 90-100% bucket (actual: 40.0% vs expected: 90%+)",
+      "reason": "Model is overconfident by 50.0%"
+    },
+    {
+      "type": "CALIBRATE",
+      "priority": "HIGH",
+      "action": "Lower confidence for 80-89% bucket (actual: 47.6% vs expected: 80%+)",
+      "reason": "Model is overconfident by 32.4%"
+    },
+    {
+      "type": "CALIBRATE",
+      "priority": "HIGH",
+      "action": "Lower confidence for 70-79% bucket (actual: 56.2% vs expected: 70%+)",
+      "reason": "Model is overconfident by 13.8%"
+    },
+    {
+      "type": "CALIBRATE",
+      "priority": "HIGH",
+      "action": "Lower confidence for 60-69% bucket (actual: 33.3% vs expected: 60%+)",
+      "reason": "Model is overconfident by 26.7%"
+    },
+    {
+      "type": "THRESHOLD",
+      "priority": "MEDIUM",
+      "action": "Raise minimum edge threshold for 3-4.9 pts range",
+      "reason": "Only 44.4% win rate with edge range 3-4.9 pts"
+    },
+    {
+      "type": "THRESHOLD",
+      "priority": "MEDIUM",
+      "action": "Raise minimum edge threshold for 1-2.9 pts range",
+      "reason": "Only 42.9% win rate with edge range 1-2.9 pts"
+    },
+    {
+      "type": "THRESHOLD",
+      "priority": "MEDIUM",
+      "action": "Raise minimum edge threshold for 0-0.9 pts range",
+      "reason": "Only 12.5% win rate with edge range 0-0.9 pts"
+    },
+    {
+      "type": "REDUCE",
+      "priority": "HIGH",
+      "action": "Reduce HIGH RISK bets (win rate: 46.7%)",
+      "reason": "High risk should exceed 65% to justify variance"
+    }
+  ],
+  "optimal_thresholds": {
+    "min_confidence": 70,
+    "min_edge": 2.0,
+    "max_high_risk_pct": 10
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "by_type": {
+    "SPREAD": {
+      "wins": 14,
+      "losses": 5,
+      "total": 19,
+      "win_rate": 0.7368,
+      "win_rate_percent": "73.7%",
+      "win_loss_string": "14-5"
+    },
+    "TOTAL": {
+      "wins": 4,
+      "losses": 6,
+      "total": 10,
+      "win_rate": 0.4,
+      "win_rate_percent": "40.0%",
+      "win_loss_string": "4-6"
+    },
+    "MONEYLINE": {
+      "wins": 1,
+      "losses": 4,
+      "total": 5,
+      "win_rate": 0.2,
+      "win_rate_percent": "20.0%",
+      "win_loss_string": "1-4"
+    }
+  },
+  "by_confidence": {
+    "50-60%": {
+      "wins": 1,
+      "losses": 7,
+      "total": 8,
+      "win_rate": 0.125,
+      "win_rate_percent": "12.5%"
+    },
+    "60-70%": {
+      "wins": 5,
+      "losses": 7,
+      "total": 12,
+      "win_rate": 0.4167,
+      "win_rate_percent": "41.7%"
+    },
+    "70-80%": {
+      "wins": 6,
+      "losses": 4,
+      "total": 10,
+      "win_rate": 0.6,
+      "win_rate_percent": "60.0%"
+    },
+    "80-90%": {
+      "wins": 8,
+      "losses": 2,
+      "total": 10,
+      "win_rate": 0.8,
+      "win_rate_percent": "80.0%"
+    },
+    "90%+": {
+      "wins": 3,
+      "losses": 1,
+      "total": 4,
+      "win_rate": 0.75,
+      "win_rate_percent": "75.0%"
+    }
+  },
+  "by_date": {
+    "current": {
+      "SPREAD": {
+        "wins": 14,
+        "losses": 5
+      },
+      "TOTAL": {
+        "wins": 4,
+        "losses": 6
+      },
+      "MONEYLINE": {
+        "wins": 1,
+        "losses": 4
+      }
+    }
+  },
+  "overall_stats": {
+    "total_bets": 34,
+    "total_wins": 19,
+    "total_losses": 15,
+    "overall_win_rate": 0.5588,
+    "overall_win_rate_percent": "55.9%"
+  },
+  "timestamp": "2026-02-17T10:05:03.465059",
+  "notes": "Used in LARLScore formula: (confidence/100) \u00d7 edge \u00d7 (win_rate / 0.5)"
+}

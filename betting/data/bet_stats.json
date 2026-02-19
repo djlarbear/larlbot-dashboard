@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-02-17T08:34:47.029539",
+  "overall": {
+    "total_bets": 10,
+    "wins": 8,
+    "losses": 2,
+    "win_rate": 80.0
+  },
+  "by_type": {
+    "SPREAD": {
+      "total": 5,
+      "wins": 4,
+      "losses": 1,
+      "win_rate": 80.0
+    },
+    "TOTAL": {
+      "total": 5,
+      "wins": 4,
+      "losses": 1,
+      "win_rate": 80.0
+    },
+    "MONEYLINE": {
+      "total": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0
+    }
+  }
+}

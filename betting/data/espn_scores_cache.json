@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-14",
+  "source": "ESPN Division I Scoreboard",
+  "scraped_at": "2026-02-15T07:42:00-05:00",
+  "games": [
+    {"away_team": "Hawai'i", "home_team": "Cal State Northridge", "away_score": 60, "home_score": 84, "status": "Final"},
+    {"away_team": "Georgetown", "home_team": "UConn", "away_score": 75, "home_score": 79, "status": "Final"},
+    {"away_team": "Virginia", "home_team": "Ohio State", "away_score": 70, "home_score": 66, "status": "Final"},
+    {"away_team": "Auburn", "home_team": "Arkansas", "away_score": 75, "home_score": 88, "status": "Final"},
+    {"away_team": "St. Thomas-Minnesota", "home_team": "Kansas City", "away_score": 104, "home_score": 64, "status": "Final"},
+    {"away_team": "Memphis", "home_team": "Utah State", "away_score": 75, "home_score": 99, "status": "Final"},
+    {"away_team": "Marshall", "home_team": "Georgia Southern", "away_score": 87, "home_score": 101, "status": "Final"},
+    {"away_team": "South Carolina", "home_team": "Alabama", "away_score": 75, "home_score": 89, "status": "Final"},
+    {"away_team": "UC Riverside", "home_team": "UC San Diego", "away_score": 66, "home_score": 72, "status": "Final"},
+    {"away_team": "Sacramento State", "home_team": "Northern Arizona", "away_score": 74, "home_score": 79, "status": "Final"},
+    {"away_team": "South Dakota State", "home_team": "Oral Roberts", "away_score": 87, "home_score": 69, "status": "Final"},
+    {"away_team": "Nevada", "home_team": "San Diego State", "away_score": 57, "home_score": 71, "status": "Final"},
+    {"away_team": "Cal State Fullerton", "home_team": "UC Irvine", "away_score": 65, "home_score": 86, "status": "Final"},
+    {"away_team": "Saint Mary's", "home_team": "Pacific", "away_score": 72, "home_score": 61, "status": "Final"},
+    {"away_team": "Minnesota", "home_team": "Washington", "away_score": 57, "home_score": 69, "status": "Final"},
+    {"away_team": "Middle Tennessee", "home_team": "Western Kentucky", "away_score": 80, "home_score": 82, "status": "Final"}
+  ]
+}
