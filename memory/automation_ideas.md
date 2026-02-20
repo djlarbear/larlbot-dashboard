@@ -106,6 +106,39 @@ Captured from Feb 18 session work. Prioritized by impact.
 ✅ Telegram notifications
 ✅ Comprehensive documentation
 
+## Completed (Feb 19)
+✅ Full system restore to working state
+✅ Railway deployment finalized (Dockerfile, railway.toml, .dockerignore)
+✅ Streamlit detection bug permanently fixed
+✅ Pick change guard system built
+✅ Cron automation confirmed working
+
+---
+
+## NEW: Deployment & Config Learnings (Feb 19, 4:59 PM)
+
+### 10. **Pre-Commit Config Checklist** (High Priority)
+**Lesson from Feb 19:** Config files are critical for deployment, but easy to forget
+**Solution:** Add pre-commit hook or checklist
+- Dockerfile: Always verify paths, ENTRYPOINT
+- railway.toml: Must have `builder = "dockerfile"`
+- .dockerignore: Must exclude local venvs
+- entrypoint.sh: Must verify Flask, reject Streamlit
+- Procfile: Remove if using Docker (creates ambiguity)
+
+**Impact:** Prevents recurring deployment failures
+**Effort:** 15 mins (add to docs/DEPLOYMENT_CHECKLIST.md)
+
+### 11. **Monitoring Dashboard for Railway Health** (Medium Priority)
+**Lesson from Feb 19:** Railway works, but we should track uptime/errors
+**Solution:** Weekly cron job polling Railway deployment status → log results
+- Check: Is app running? Response time? Error rate?
+- Store in `betting/logs/railway_health.jsonl`
+- Alert via Telegram if down or slow
+
+**Impact:** Early warning of deployment issues
+**Effort:** 2-3 hours (Railway API integration)
+
 ---
 
 ## Suggested Next Session Focus
@@ -113,8 +146,13 @@ Captured from Feb 18 session work. Prioritized by impact.
 2. **Configuration file** (enables easy tuning, unblocks weight experiments)
 3. **Unit tests** (foundation for confident refactoring)
 
+**After system stability (1-2 weeks):**
+- Pre-commit config checklist
+- Railway monitoring dashboard
+- Then: UI improvements (only after model hits 55%+ win rate)
+
 **Rest can wait until win rate stabilizes above 55%.**
 
 ---
 
-**Last updated:** 2:00 AM EST, Feb 19, 2026
+**Last updated:** 2:00 AM EST, Feb 20, 2026

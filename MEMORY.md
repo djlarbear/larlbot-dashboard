@@ -224,15 +224,52 @@ Once you fix a recurring error, you need to DOCUMENT the fix in config files (no
 
 ---
 
+## 🎯 CRITICAL LESSONS - DEPLOYMENT & CONFIG
+
+**From Feb 19 troubleshooting chain:**
+
+1. **Config files are permanent fixes, not local patches**
+   - Procfile, railway.json, railway.toml, .dockerignore, entrypoint.sh
+   - These MUST be in git to survive deployments
+   - Local workarounds will regress when you restart/redeploy
+
+2. **Recurring errors = config file opportunities**
+   - If you fix the same thing twice, build it into config, not patches
+   - Example: Streamlit detection happened twice; fixed with railway.toml + .dockerignore
+
+3. **Don't redesign UI when core system is working**
+   - Dashboard redesign between 10 AM - 4 PM broke system progressively
+   - Better to revert to known good state than patch cascading failures
+   - UI improvements only AFTER model hits 55%+ win rate
+
+4. **Ambiguity in deployment config causes failures**
+   - Procfile + Dockerfile = Railway tries both, gets confused
+   - Pick ONE path: either Procfile-based OR Docker-based
+   - Document choice in code/git for next developer
+
+---
+
 ## NEXT SESSION ACTIONS
 
 1. Monitor Railway for stability (watch for regressions)
-2. Review betting model performance
+2. Review betting model performance (daily updates via 5 AM cron)
 3. If needed, activate pick change guard system
-4. No UI/design changes - focus on model quality
-5. Trust the automation to refine picks daily
+4. **No UI/design changes** - focus on model quality only
+5. Trust the automation to refine picks daily (Memory Review 2 AM, Betting Workflow 5 AM, Error Monitor 6h)
 
 ---
 
 **Session Complete: 5:00 PM EST - Feb 19, 2026**
 **Status: ✅ STABLE, DEPLOYED, READY FOR PRODUCTION**
+
+---
+
+## DAILY REVIEW (Feb 20, 2:00 AM)
+
+**System Status:** ✅ All systems running
+**No issues overnight.** Next betting workflow runs 5 AM.
+
+**Upcoming work:**
+- Wait for 5 AM betting workflow (auto-pick update)
+- Monitor for 24h (check at next heartbeat)
+- No manual intervention needed unless error monitor alerts
