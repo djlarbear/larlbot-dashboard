@@ -192,6 +192,26 @@ Once you fix a recurring error, you need to DOCUMENT the fix in config files (no
 **Data Integrity:** Verified
 **Git:** Clean state at working commit
 
+## MODEL CONFIGURATION (Feb 20, 2:28 AM)
+
+**Strategic Setup (Larry's Request):**
+- 🦞 **Primary:** Opus (reasoning-heavy CEO work)
+- 📋 **Backup:** Sonnet (when Opus efficiency needed)
+- 🚀 **Backup:** Haiku (subagent specialist work)
+
+**Token Optimization Strategy:**
+- Spawn Haiku subagents for betting tasks (picks, tracking, learning)
+- Opus handles CEO decisions and strategy
+- Haiku subagents = isolated execution, lower token burn
+- Results auto-deliver to you without bloating session context
+
+**Implementation:**
+- Main session: Opus-powered (direct communication with Larry)
+- Betting work: Haiku subagents (daily picks, result tracking, analysis)
+- Model overrides applied: Opus primary
+
+---
+
 ## CURRENT SYSTEM STATE (Feb 19, 5:00 PM)
 
 **Betting Dashboard:**
