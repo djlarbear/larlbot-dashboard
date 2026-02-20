@@ -264,6 +264,25 @@ Once you fix a recurring error, you need to DOCUMENT the fix in config files (no
 
 ---
 
+## STUCK BETS RESOLVED (Feb 20, 2:26 AM)
+
+**Found & Fixed:** 2 bets from Feb 15 that were stuck as PENDING (5+ days)
+
+**Results:**
+1. ✅ **Wright State @ Cleveland State** — Wright State 102, Cleveland State 90
+   - Bet: Wright State -7.5 → **WIN** (covered by 12 points)
+   
+2. ❌ **IUPUI @ Fort Wayne** — IUPUI 78, Fort Wayne 83
+   - Bet: Fort Wayne -7.5 → **LOSS** (only covered 5, needed 8)
+
+**Action Taken:**
+- Searched ESPN for actual game scores (Feb 15, 2026)
+- Updated SQLite database with correct results
+- Committed to git (c071dd4)
+- System now has accurate historical record
+
+**No change to overall record** (1 WIN + 1 LOSS cancels out)
+
 ## DAILY REVIEW (Feb 20, 2:00 AM)
 
 **System Status:** ✅ All systems running
